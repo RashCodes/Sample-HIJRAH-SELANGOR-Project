@@ -8,4 +8,4 @@ Customer Financing Application Schedule
 Financing Application Schedule
 Management Dashboard
 
-Created by HTML5 & CSS & JavaScript & Bootstrap5.
+Created by HTML5 & CSS & SCSS & JavaScript & Bootstrap5.
