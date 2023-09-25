@@ -1,0 +1,78 @@
+<!-- Disbursed Financings START -->
+
+<div class="card px-0 pt-3 mb-4" style=" display:block; background-color: rgba(51, 128, 255, 0.15); border-radius: 20px;">
+    <div class="container-fluid " id="loan" style="  border-radius: 7px;">
+        <div class="container-fluid px-0">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">Disbursed Financings</h4>
+                <!-- View more button incase of reuse -->
+                <!-- <button id="view4" class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    View More
+                </button> -->
+            </div>
+            
+                <div class="container-fluid overflow-auto" style="  max-height: 400px;">
+                    <table class="table table-responsive table-bordered table-hover text-center" id="loan_repayment_table1"
+                    style="color: rgb(0, 0, 0); overflow: scroll; ">
+                    <thead>
+                        <tr class="sticky-top" style=" z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                            
+                            <th><b>Financing ID </b></th>
+                            <th><b>Amount (RM) </b></th>
+                            <th><b>Financing Tenture (Months) </b></th>
+                            <th><b>Profit (%) </b></th>
+                            <th><b>Product </b></th>
+                            <th><b>Applicant Details</b></th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody style="background-color: white;" id="searchtable">
+                    <tr class="text-start">
+                            <td> LN000012 </td>
+                            <td> 100,000 </td>
+                            <td> 36 </td>
+                            <td> 10 </td>
+                            <td> Equipment Financing </td>
+                            <td> Dwayne Johnson</td>
+                    </tr>
+                    <tr class="table-light text-start">
+                            <td> LN000052 </td>
+                            <td> 120,000 </td>
+                            <td> 36 </td>
+                            <td> 10 </td>
+                            <td> Equipment Financing </td>
+                            <td> Billy Hillbill</td>
+                    </tr>
+                    <tr class="text-start">
+                            <td> LN000063 </td>
+                            <td> 20,000 </td>
+                            <td> 36 </td>
+                            <td> 10 </td>
+                            <td> Equipment Financing </td>
+                            <td> Safa Sheraz</td>
+                    </tr>
+                    <tr class="table-light text-start">
+                            <td> LN000010 </td>
+                            <td> 90,000 </td>
+                            <td> 36 </td>
+                            <td> 10 </td>
+                            <td> Equipment Financing </td>
+                            <td> Mori Calliope</td>
+                    </tr>
+                    <tr class="text-start">
+                            <td> LN000085 </td>
+                            <td> 65,050 </td>
+                            <td> 36 </td>
+                            <td> 10 </td>
+                            <td> Equipment Financing </td>
+                            <td> Razak Farhan</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Disbursed Financings END -->

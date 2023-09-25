@@ -1,0 +1,3909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>
+        Management Financing Applications History
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="./customcss.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="./assets/css/soft-ui-dashboard.css?v=1.0.6" rel="stylesheet" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/soft-ui-dashboard.min.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script src="https://kit.fontawesome.com/b05c17364c.js" crossorigin="anonymous"></script>
+    <script>
+        let x = 1;
+    </script>
+    <!-- Card selection popup Approve Financing Application -->
+ <script>
+
+</script>
+
+</head>
+
+<body class="g-sidenav-show" style="max-width: 100%; overflow-x: hidden; font-family: Arial, Helvetica, sans-serif;">
+
+<nav class="navbar navbar-main navbar-expand-lg px-0 mx-0 shadow- border-radius-md fixed-start sticky-top border-bottom" id="navbarBlur"
+    navbar-scroll="true" style="background-color: white; position: fixed; width: 100%;">
+    <div class="container-fluid py-0 px-1" >
+    <nav aria-label="breadcrumb ">
+
+            <a class="navbar-brand font-weight-bolder mb-0 fs-4 align-middle " href="#">
+                <img src="assets\img\logos\HSLogo.png" height="50" class="d-inline-block" alt="">
+                Hijrah Selangor
+            </a>
+    </nav>
+    
+</nav>
+</div>
+
+
+<aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 mt-6 my-0 px-0 fixed-start ms-0 bg-gray-200" id="sidenav-main" style="overflow: hidden;">
+    <hr class="horizontal dark mt-0" >
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main" >
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../Management Dashboard/dashboard.html" >
+                    <i class="bi bi-speedometer2" style=" font-size:x-large; margin-left: 5px;"></i>
+                    <span class="nav-link-text" style="font-size: 13.5px;">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Management Dashboard/disbursedfinancingapp.html" >
+                    <i class="bi bi-cash-stack" style="font-size:x-large; margin-left: 5px;"></i>
+                    <span class="nav-link-text" style="font-size: 13.5px;" >Disbursed Financing Applications</span>
+                </a>
+            </li>
+            <li class="nav-item understyle">
+                <a class="nav-link active" href="./financeappschedule_Management.html" >
+                    <i class="fa-solid fa-calendar-minus" style=" font-size:x-large; margin-left: 5px;"></i>
+                    <span class="nav-link-text" style="font-size: 13.5px;">Financing Application Schedule</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Management_OnB.html" >
+                    <i class="fa-solid fa-truck-ramp-box" style=" font-size:large; margin-left: 5px;"></i>
+                    <span class="nav-link-text" style="font-size: 13.5px;">Management Onboarding</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-md">
+    
+      <!-- Section title start -->
+<div class="container-fluid py-4">
+<div class="pt-5" style="clear: both; text-align:center;">
+    <h4 style="float: left; margin-top: 3px; font-weight: 1000; color: #31669c">Financing Application Schedule History</h4>
+    
+    
+</div>
+
+<br><br><br><br>
+<button type="button" class="btn btn-primary btn-xlg" id="companyall1" onclick="companyall()">All Application</button>
+
+
+     <!-- Section title end -->
+
+     <!-- Section cards start -->
+
+     
+<div class="card px-0 pb-4" style=" display:block; background-color: rgba(51, 128, 255, 0.15); border-radius: 20px;">
+
+<!--  -->
+
+    <div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+            <div class="card move-on-hover card h-100" type="button" onclick="paidshow()">
+                <div class="card-body p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div
+                                class="img">
+                                <img src="assets\img\Tumbs-up.png" class="img-fluid rounded-start move-on-hover" alt="Cinque Terre">
+                                
+                            </div>
+                        </div>
+                        <div class="col-9 text-end " >
+                            <div class="numbers">
+                                <p class="text-lg mb-4 text-capitalize font-weight-bold ">Paid</p>
+                                <h5 class="font-weight-bolder mb-0">
+                                    3
+                                </h5>
+                            
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+            <div class="card move-on-hover card h-100" type="button" onclick="markPaid()">
+                <div class="card-body p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div
+                            class="img">
+                            <img src="assets\img\marked.png" class="img-fluid rounded-start move-on-hover" alt="Cinque Terre">
+                            </div>
+                        </div>
+                        <div class="col-9 text-end">
+                            <div class="numbers">
+                                <p class="text-lg mb-4 text-capitalize font-weight-bold">Marked Paid</p>
+                                <h5 class="font-weight-bolder mb-0" >
+                                    2
+                                </h5>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+            <div class="card move-on-hover card h-100" type="button" onclick="pending()">
+                <div class="card-body p-3">
+                    <div class="row">
+                        
+                        <div class="col-3">
+                            <div
+                            class="img">
+                            <img src="assets\img\pending.png" class="img-fluid rounded-start move-on-hover" alt="Cinque Terre">
+                            </div>
+                        </div>
+                        <div class="col-9 text-end">
+                            <div class="numbers">
+                                <p class="text-lg mb-4 text-capitalize font-weight-bold">Pending</p>
+                                <h5 class="font-weight-bolder mb-0">
+                                    3
+                                </h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+            <div class="card move-on-hover card h-100" type="button" onclick="overdue()">
+                <div class="card-body p-3">
+                    <div class="row">
+                        
+                        <div class="col-3">
+                            <div
+                            class="img">
+                            <img src="assets\img\Thumbs down.png" class="img-fluid rounded-start move-on-hover" alt="Cinque Terre">
+                            </div>
+                        </div>
+                        <div class="col-9 text-end">
+                            <div class="numbers">
+                                <p class="text-lg mb-4 text-capitalize font-weight-bold ">Overdue</p>
+                                <h5 class="font-weight-bolder mb-0">
+                                    2
+                                </h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="container-fluid px-0 pt-5" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid" id="appfinanceapp0">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">APPROVE FINANCING APPLICATION - [ALL]</h4>
+                
+            </div>
+            <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+                <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+                style="color: rgb(0, 0, 0); overflow: scroll; ">
+                <thead>
+                    <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                        <th> <i class="bi bi-check2-square"></i> </th>
+                        <th><b># </b></th>
+                        <th><b>FINANCING ID </b></th>
+                        <th><b>COMPANY NAME </b></th>
+                        <th><b>FINANCING AMOUNT [RM] </b></th>
+                        <th><b>FINANCING TENURE [MONTHS] </b></th>
+                      
+                    </tr>
+                </thead>
+                <tbody style="background-color: white;" id="searchtable">
+                <tr class=" text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 1 </td>
+                        <td> LN0067 </td>
+                        <td> Care Plus Sdn Bhd </td>
+                        <td> 3,000 </td>
+                        <td> 12 </td>
+                        
+                </tr>
+                <tr class=" table-light  text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 2 </td>
+                        <td> LN0063 </td>
+                        <td> Top Glove Sdn Bhd </td>
+                        <td> 5,000 </td>
+                        <td> 24 </td>
+                        
+                </tr>
+                <tr class="  text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 3 </td>
+                        <td> LN0046 </td>
+                        <td> Hi Tech Sdn Bhd </td>
+                        <td> 3,000 </td>
+                        <td> 12 </td>
+                </tr>
+                <tr class=" table-light text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 4 </td>
+                        <td> LN0098 </td>
+                        <td> RGB Sdn Bhd </td>
+                        <td> 3,000 </td>
+                        <td> 12 </td>
+                        
+                </tr>
+                <tr class="text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 5 </td>
+                        <td> LN0035 </td>
+                        <td> Heitech Padu Sdn Bhd </td>
+                        <td> 5,000 </td>
+                        <td> 24 </td>
+                        
+                </tr>
+                <tr class=" table-light  text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 6 </td>
+                        <td> LN0066 </td>
+                        <td> Films Sdn Bhd </td>
+                        <td> 6,000 </td>
+                        <td> 24 </td>
+                        
+                </tr>
+                <tr class="  text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 7 </td>
+                        <td> LN0061 </td>
+                        <td> Motorcycle Repair Sdn Bhd </td>
+                        <td> 3,000 </td>
+                        <td> 24 </td>
+                        
+                </tr>
+                <tr class=" table-light  text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 8 </td>
+                        <td> LN0054 </td>
+                        <td> Marina Bakery Sdn Bhd </td>
+                        <td> 5,000 </td>
+                        <td> 12 </td>
+                </tr>
+                <tr class="  text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 9 </td>
+                        <td> LN0088 </td>
+                        <td> Electronics Sdn Bhd </td>
+                        <td> 3,000 </td>
+                        <td> 12 </td>
+                        
+                </tr>
+                <tr class="table-light  text-start">
+                    <td  class="text-center">
+                        <input class="form-check-input position-static" onclick="dropondrop0(0)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                        <td class="text-center"> 10 </td>
+                        <td> LN0077 </td>
+                        <td> Highlander Car sales Sdn Bhd </td>
+                        <td> 7,000 </td>
+                        <td> 12 </td>
+                        
+                </tr>
+            
+                </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+<!-- APPROVE FINANCING APPLICATION - [PAID] start -->
+<div class="container-fluid px-0 " style=" background-color: white; border-radius: 0px;">
+    <div class="container-fluid" id="appfinanceapp1" style="display: none;">
+        <div class="col-12">
+            <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">APPROVE FINANCING APPLICATION - [PAID]</h4>
+            
+        </div>
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    <th> <i class="bi bi-check2-square"></i> </th>
+                    <th><b># </b></th>
+                    <th><b>FINANCING ID </b></th>
+                    <th><b>COMPANY NAME </b></th>
+                    <th><b>FINANCING AMOUNT [RM] </b></th>
+                    <th><b>FINANCING TENURE [MONTHS] </b></th>
+                      
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class=" table-light text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop1(1)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 1 </td>
+                    <td> LN0067 </td>
+                    <td> Care Plus Sdn Bhd </td>
+                    <td> 3,000 </td>
+                    <td> 12 </td>
+                    
+            </tr>
+            <tr class="  text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop1(2)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 2 </td>
+                    <td> LN0063 </td>
+                    <td> Top Clove Sdn Bhd </td>
+                    <td> 5,000 </td>
+                    <td> 24 </td>
+                    
+            </tr>
+            <tr class=" table-light text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop1(3)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 3 </td>
+                    <td> LN0046 </td>
+                    <td> Hi Tech Sdn Bhd </td>
+                    <td> 3,000 </td>
+                    <td> 12 </td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+
+    <!-- APPROVE FINANCING APPLICATION - [PAID] end -->
+
+     <!-- LOAN REPAYMENT SCHEDULE RADIO BUTTON 1-1 FOR PAID START -->
+
+     <div class="container-fluid px-0 pt-5" id="paidloan1" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+                <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+                </button>
+            </div>
+            
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b>PRINCIPAL [RM] </b></th>
+                    <th><b>PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b>FINANCING BALANCE [RM] </b></th>
+                    <th ><b>STATUS </b></th>
+                    <th><b> DAY PAST DUE </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 250 </td>
+                    <td> 20.89 </td>
+                    <td> 0 </td>
+                    <td> 2789.11 </td>
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 250 </td>
+                    <td> 20.89 </td>
+                    <td> 0</td>
+                    <td> 2518.22 </td>
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 250 </td>
+                    <td> 20.89 </td>
+                    <td> 0 </td>
+                    <td> 2247.33 </td>
+                  <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 1976.44 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 1705.55 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 250 </td>
+                    <td> 20.89 </td>
+                    <td> 0 </td>
+                    <td> 1434.66</td>
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 250 </td>
+                <td> 20.89 </td>
+                <td> 0 </td>
+                <td> 1163.77 </td>
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                </td>
+                <td> 0</td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 250 </td>
+            <td> 20.89 </td>
+            <td> 0 </td>
+            <td> 892.88 </td>
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color:#ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+            </td>
+            <td> 0</td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0</td>
+        <td> 621.99</td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 351.1 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="text-start">
+        <td class="text-center"> 11 </td>
+        <td> 11/11/2021 </td>
+        <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 80.21 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 0 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+    
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+
+      <!-- LOAN REPAYMENT SCHEDULE RADIO BUTTON 1-1 FOR PAID END -->
+
+      <!-- LOAN REPAYMENT SCHEDULE TABLE 1 FOR DROPDOWN RADIO BUTTON 2-2 PAID START -->
+
+      <div class="container-fluid px-0 pt-5" id="paidloan2" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+                <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+                </button>
+            </div>
+            
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b> PRINCIPAL [RM] </b></th>
+                    <th><b> PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b> FINANCING BALANCE [RM] </b></th>
+                    <th><b> STATUS </b></th>
+                    <th><b> DAY PAST DUE </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 208.33 </td>
+                    <td> 8.42 </td>
+                    <td> 0 </td>
+                    <td> 4,985.25 </td>
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 208.33 </td>
+                    <td> 8.42 </td>
+                    <td> 0 </td>
+                    <td> 4,768.50 </td>
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 208.33 </td>
+                    <td> 8.42 </td>
+                    <td> 0 </td>
+                    <td> 4,551.75 </td>
+                  <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 208.33 </td>
+                    <td> 8.42 </td>
+                    <td> 0 </td>
+                    <td> 4,335.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 208.33 </td>
+                    <td> 8.42 </td>
+                    <td> 0 </td>
+                    <td> 4,118.25 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 208.33 </td>
+                    <td> 8.42 </td>
+                    <td> 0 </td>
+                    <td> 3,901.50 </td>
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 208.33 </td>
+                <td> 8.42 </td>
+                <td> 0 </td>
+                <td> 3,684.75 </td>
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                </td>
+                <td> 0</td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 208.33 </td>
+            <td> 8.42 </td>
+            <td> 0 </td>
+            <td> 3,468.00 </td>
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color:#ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+            </td>
+            <td> 0</td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 3,251.25 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 3,034.50 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="text-start">
+        <td class="text-center"> 11 </td>
+        <td> 11/11/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,817.75 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class="text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 208.33 </td>
+        <td> 8.42 </td>
+        <td> 0 </td>
+        <td> 2,601.00 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+    
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+<!-- LOAN REPAYMENT SCHEDULE TABLE 1 FOR DROPDOWN RADIO BUTTON 2-2 PAID END -->
+
+
+
+<!-- LOAN REPAYMENT SCHEDULE TABLE 1 FOR DROPDOWN RADIO BUTTON 3-3 PAID START -->
+
+
+<div class="container-fluid px-0 pt-5" id="paidloan3" style=" background-color: white; border-radius: 0px;">
+    <div class="container-fluid">
+        <div class="col-12">
+            <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+            <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+            </button>
+        </div>
+        
+    <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+        <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+        style="color: rgb(0, 0, 0); overflow: scroll; ">
+        <thead>
+            <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                
+                <th><b>#</b></th>
+                <th><b>PAYMENT DATE </b></th>
+                <th><b>PRINCIPAL [RM] </b></th>
+                <th><b>PROFIT [RM] </b></th>
+                <th><b>PENALTIES [RM] </b></th>
+                <th><b>FINANCING BALANCE [RM] </b></th>
+                <th ><b>STATUS </b></th>
+                <th><b> DAY PAST DUE </b></th>
+                
+            </tr>
+        </thead>
+        <tbody style="background-color: white;" id="searchtable">
+        <tr class="text-start">
+                <td class="text-center"> 1 </td>
+                <td> 01/01/2021 </td>
+                <td> 250 </td>
+                <td> 20.89 </td>
+                <td> 0 </td>
+                <td> 2789.11 </td>
+                <td  class="text-center" >
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                </td>
+                <td> 0 </td>
+        </tr>
+        <tr class="table-light text-start">
+                <td class="text-center"> 2 </td>
+                <td> 02/02/2021 </td>
+                <td> 250 </td>
+                <td> 20.89 </td>
+                <td> 0</td>
+                <td> 2518.22 </td>
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                </td>
+                <td> 0 </td>
+        </tr>
+        <tr class="text-start">
+                <td class="text-center"> 3 </td>
+                <td> 03/03/2021 </td>
+                <td> 250 </td>
+                <td> 20.89 </td>
+                <td> 0 </td>
+                <td> 2247.33 </td>
+              <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+               </td>
+                 <td> 0 </td>
+        </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 4 </td>
+                <td> 04/04/2021 </td>
+                <td> 250 </td>
+    <td> 20.89 </td>
+    <td> 0 </td>
+    <td> 1976.44 </td>
+    <td  class="text-center">
+        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+    </td>
+    <td> 0 </td>
+        </tr>
+        <tr class="text-start">
+            <td class="text-center"> 5 </td>
+                <td> 05/05/2021 </td>
+                <td> 250 </td>
+    <td> 20.89 </td>
+    <td> 0 </td>
+    <td> 1705.55 </td>
+    <td  class="text-center">
+        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+    </td>
+    <td> 0 </td>
+        </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 6 </td>
+                <td> 06/06/2021 </td>
+                <td> 250 </td>
+                <td> 20.89 </td>
+                <td> 0 </td>
+                <td> 1434.66</td>
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                </td>
+                <td> 0 </td>
+        </tr>
+        <tr class="text-start">
+            <td class="text-center"> 7 </td>
+            <td> 07/07/2021 </td>
+            <td> 250 </td>
+            <td> 20.89 </td>
+            <td> 0 </td>
+            <td> 1163.77 </td>
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+            </td>
+            <td> 0</td>
+        </tr>
+    <tr class="table-light text-start">
+        <td class="text-center"> 8 </td>
+        <td> 08/08/2021 </td>
+        <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 892.88 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color:#ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+</tr> 
+
+<tr class="text-start">
+    <td class="text-center"> 9 </td>
+    <td> 09/09/2021 </td>
+    <td> 250 </td>
+    <td> 20.89 </td>
+    <td> 0</td>
+    <td> 621.99</td>
+    <td  class="text-center">
+        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+    </td>
+    <td> 0 </td>
+</tr>
+
+<tr class="table-light text-start">
+    <td class="text-center"> 10 </td>
+    <td> 10/10/2021 </td>
+    <td> 250 </td>
+    <td> 20.89 </td>
+    <td> 0 </td>
+    <td> 351.1 </td>
+    <td  class="text-center">
+        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+    </td>
+    <td> 0 </td>
+</tr>
+
+<tr class="text-start">
+    <td class="text-center"> 11 </td>
+    <td> 11/11/2021 </td>
+    <td> 250 </td>
+    <td> 20.89 </td>
+    <td> 0 </td>
+    <td> 80.21 </td>
+    <td  class="text-center">
+        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+    </td>
+    <td> 0 </td>
+</tr>
+
+<tr class="table-light text-start">
+    <td class="text-center"> 12 </td>
+    <td> 12/12/2021 </td>
+    <td> 250 </td>
+    <td> 20.89 </td>
+    <td> 0 </td>
+    <td> 0 </td>
+    <td  class="text-center">
+        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+    </td>
+    <td> 0</td>
+</tr>
+
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+
+<!-- LOAN REPAYMENT SCHEDULE TABLE 1 FOR DROPDOWN RADIO BUTTON 3-3 PAID END -->
+
+    </div>
+
+    <!-- T2 FOR MARKED PAID START -->
+    <div class="container-fluid" id="appfinanceapp2" style="display: none;">
+        <div class="col-12">
+            <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">APPROVE FINANCING APPLICATION - [MARKED PAID]</h4>
+            
+        </div>
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    <th> <i class="bi bi-check2-square"></i> </th>
+                    <th><b># </b></th>
+                    <th><b>FINANCING ID </b></th>
+                    <th><b>COMPANY NAME </b></th>
+                    <th><b>FINANCING AMOUNT [RM] </b></th>
+                    <th><b>FINANCING TENURE [MONTHS] </b></th>
+                   
+                    
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class=" text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop2(1)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 1 </td>
+                    <td> LN0098 </td>
+                    <td> RGB Sdn Bhd </td>
+                    <td> 10,000 </td>
+                    <td> 12 </td>
+                    
+            </tr>
+            <tr class=" table-light text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop2(2)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 2 </td>
+                    <td> LN0035 </td>
+                    <td> Heitech Padu Sdn Bhd </td>
+                    <td> 15,000 </td>
+                    <td> 24 </td>
+            </tr>
+           
+            </tbody>
+        </table>
+    </div>
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 2-2 FOR MARKED PAID START -->
+
+     <div class="container-fluid px-0 pt-5" id="markedpaidloan1" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+                <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+                </button>
+            </div>
+            
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b> PRINCIPAL [RM] </b></th>
+                    <th><b> PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b> FINANCING BALANCE [RM] </b></th>
+                    <th><b></b></th>
+                    <!-- <th><b> FINANCING ID </b></th> -->
+                    <th ><b> STATUS </b></th>
+                    <th><b> DAY PAST DUE </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 833.33 </td>
+                    <td> 16.67 </td>
+                    <td> 0 </td>
+                    <td> 9,350.00 </td>
+                    <td  class="text-center">
+                        <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+                   
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 833.33 </td>
+                    <td> 16.67 </td>
+                    <td> 0 </td>
+                    <td> 8,500.00 </td>
+                    <td  class="text-center">
+                        <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+                    
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 833.33 </td>
+                    <td> 16.67 </td>
+                    <td> 0 </td>
+                    <td> 7,650.00 </td>
+                    <td  class="text-center">
+                        <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+                    <!-- <td> LN0046 </td> -->
+                  <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 833.33 </td>
+                    <td> 16.67 </td>
+                    <td> 0 </td>
+                    <td> 6,800.00 </td>
+                    <td  class="text-center">
+                         <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+                     <!-- <td> LN0098 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+                     </tr>
+                    <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 833.33 </td>
+                    <td> 16.67 </td>
+                    <td> 0 </td>
+                    <td> 5,950.00 </td>
+                    <td  class="text-center">
+                        <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+        
+                    <!-- <td> LN0035 </td> -->
+                    <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 833.33 </td>
+                    <td> 16.67 </td>
+                    <td> 0 </td>
+                    <td> 5,100.00 </td>
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button> 
+                    </td>
+                   
+                    <!-- <td> LN0066 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 833.33 </td>
+                <td> 16.67 </td>
+                <td> 0 </td>
+                <td> 4,250.00 </td>
+                <td  class="text-center">
+                    <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                </td>
+               
+                <!-- <td> LN0066 </td> -->
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                </td>
+                <td> 0</td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 833.33 </td>
+            <td> 16.67 </td>
+            <td> 0 </td>
+            <td> 3,400.00 </td>
+            <td  class="text-center">
+                <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+            </td>
+           
+            <!-- <td> LN0054 </td> -->
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+            </td>
+            <td> 0 </td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 833.33 </td>
+        <td> 16.67 </td>
+        <td> 0 </td>
+        <td> 2,550.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+       
+        <!-- <td> LN0088 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 833.33 </td>
+        <td> 16.67 </td>
+        <td> 0 </td>
+        <td> 1,700.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0097 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class=" text-start">
+        <td class="text-center"> 11 </td>
+        <td> 11/11/2021 </td>
+        <td> 833.33 </td>
+        <td> 16.67 </td>
+        <td> 0 </td>
+        <td> 850.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0031 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 833.33 </td>
+        <td> 16.67 </td>
+        <td> 0 </td>
+        <td> 0.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 4 FOR MARKED PAID END -->
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 2 FOR DROPDOWN RADIO BUTTON 1-1 MARKED PAID START -->
+
+     <div class="container-fluid px-0 pt-5" id="markedpaidloan2" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+                <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+                </button>
+            </div>
+            
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b> PRINCIPAL [RM] </b></th>
+                    <th><b> PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b> FINANCING BALANCE [RM] </b></th>
+                    <th><b></b></th>
+                    <!-- <th><b> FINANCING ID </b></th> -->
+                    <th ><b> STATUS </b></th>
+                    <th><b> DAY PAST DUE </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 458.33 </td>
+                    <td> 18.33 </td>
+                    <td> 0 </td>
+                    <td> 10,963.33 </td>
+                    <td  class="text-center">
+                        <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+                   
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 458.33 </td>
+                    <td> 18.33 </td>
+                    <td> 0 </td>
+                    <td> 10,486.67 </td>
+                    <td  class="text-center">
+                        <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+                    
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 458.33 </td>
+                    <td> 18.33 </td>
+                    <td> 0 </td>
+                    <td> 10,010.00 </td>
+                    <td  class="text-center">
+                        <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+                    <!-- <td> LN0046 </td> -->
+                  <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 458.33 </td>
+                    <td> 18.33 </td>
+                    <td> 0 </td>
+                    <td> 9,533.33 </td>
+                    <td  class="text-center">
+                         <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+                     <!-- <td> LN0098 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+                     </tr>
+                    <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 458.33 </td>
+                    <td> 18.33 </td>
+                    <td> 0 </td>
+                    <td> 9,056.67 </td>
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button> 
+                    </td>
+        
+        <!-- <td> LN0035 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 458.33 </td>
+                    <td> 18.33 </td>
+                    <td> 0 </td>
+                    <td> 8,580.00 </td>
+                    <td  class="text-center">
+                        <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                    </td>
+                   
+                    <!-- <td> LN0066 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 458.33 </td>
+                <td> 18.33 </td>
+                <td> 0 </td>
+                <td> 8,103.33 </td>
+                <td  class="text-center">
+                    <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+                </td>
+               
+                <!-- <td> LN0066 </td> -->
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                </td>
+                <td> 0</td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 458.33 </td>
+            <td> 18.33 </td>
+            <td> 0 </td>
+            <td> 7,626.67 </td>
+            <td  class="text-center">
+                <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+            </td>
+           
+            <!-- <td> LN0054 </td> -->
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+            </td>
+            <td> 0 </td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 7,150.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+       
+        <!-- <td> LN0088 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 6,673.33 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0097 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class=" text-start">
+        <td class="text-center"> 11 </td>
+        <td> 11/11/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 6,196.67 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0031 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 5,720.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 13 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 5,243.33 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 14 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 4,766.67 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 15 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 4,290.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 16 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 3,813.33 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button>  
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 17 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 3,336.67 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 18 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 2,860.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="text-start">
+        <td class="text-center"> 19 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 2,383.33 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 20 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 1,906.67 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 21 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 1,430.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button>  
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 22 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 953.33 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 23 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 476.67 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 24 </td>
+        <td> 12/12/2021 </td>
+        <td> 458.33 </td>
+        <td> 18.33 </td>
+        <td> 0 </td>
+        <td> 0.00 </td>
+        <td  class="text-center">
+            <!-- <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#MarkpaidModal" style=" background-color:rgb(233, 172, 6); border-radius: 7px;" id="markpaid">Mark Paid  </button>  -->
+        </td>
+        
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 2 FOR DROPDOWN RADIO BUTTON 1-1 MARKED PAID END -->
+
+
+    </div>
+
+    <!-- T2 FOR MARKED PAID END -->
+
+    <!-- T3 FOR PENDING START -->
+    <div class="container-fluid" id="appfinanceapp3" style="display: none;">
+        <div class="col-12">
+            <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">APPROVE FINANCING APPLICATION - [PENDING]</h4>
+            
+        </div>
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    <th> <i class="bi bi-check2-square"></i> </th>
+                    <th><b># </b></th>
+                    <th><b> FINANCING ID </b></th>
+                    <th><b> COMPANY NAME </b></th>
+                    <th><b> FINANCING AMOUNT [RM] </b></th>
+                    <th><b> FINANCING TENURE [MONTHS] </b></th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class=" table-light text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop3(1)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 1 </td>
+                    <td> LN0066 </td>
+                    <td> Films Sdn Bhd</td>
+                    <td> 6,000 </td>
+                    <td> 24 </td>
+                    
+            </tr>
+            <tr class=" text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop3(2)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 2 </td>
+                    <td> LN0061 </td>
+                    <td> Motorcycle Repair Sdn Bhd </td>
+                    <td> 15,000 </td>
+                    <td> 24 </td>
+                    
+            </tr>
+            <tr class=" table-light text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop3(3)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 3 </td>
+                    <td> LN0054 </td>
+                    <td> Marina Bakery Sdn Bhd </td>
+                    <td> 5,000 </td>
+                    <td> 12 </td>
+            </tr>
+           
+            </tbody>
+        </table>
+    </div>
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-1 PENDING START -->
+
+     <div class="container-fluid px-0 pt-5" id="pendingloan1" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+                <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+                </button>
+            </div>
+            
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b> PRINCIPAL [RM] </b></th>
+                    <th><b> PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b> FINANCING BALANCE [RM] </b></th>
+                    <!-- <th><b> FINANCING ID </b></th> -->
+                    <th ><b> STATUS </b></th>
+                    <th><b> DAY PAST DUE </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10 </td>
+                    <td> 0 </td>
+                    <td> 5,980.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10 </td>
+                    <td> 0 </td>
+                    <td> 5,720.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10 </td>
+                    <td> 0 </td>
+                    <td> 5,460.00 </td>
+                    <!-- <td> LN0046 </td> -->
+                  <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10 </td>
+                    <td> 0 </td>
+                    <td> 5,200.00 </td>
+                    <!-- <td> LN0098 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10 </td>
+                    <td> 0 </td>
+                    <td> 4,940.00 </td>
+                    <!-- <td> LN0035 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10 </td>
+                    <td> 0 </td>
+                    <td> 4,680.00 </td>
+                    <!-- <td> LN0066 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm " type="text" style=" color: #ffff; background-color: #F29339; border-radius: 1px;" id="overdue">PENDING  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 250.00 </td>
+                <td> 10 </td>
+                <td> 0 </td>
+                <td> 4,420.00 </td>
+                <!-- <td> LN0066 </td> -->
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                </td>
+                <td> 0 </td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 250.00 </td>
+            <td> 10 </td>
+            <td> 0 </td>
+            <td> 4,160.00 </td>
+            <!-- <td> LN0054 </td> -->
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+            </td>
+            <td> 0 </td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 3,900.00 </td>
+        <!-- <td> LN0088 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 3,640.00 </td>
+        <!-- <td> LN0097 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class=" text-start">
+        <td class="text-center"> 11 </td>
+        <td> 02/11/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 3,380.00 </td>
+        <!-- <td> LN0031 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 3,120.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 13 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 2,860.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 14 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 2,600.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 15 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 2,340.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 16 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 2,080.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 17 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 1,820.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 18 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 1,560.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 19 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 1,300.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 20 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 1,040.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 21 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 780.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 22 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 520.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 23 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 260.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 24 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10 </td>
+        <td> 0 </td>
+        <td> 0.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-1 PENDING END -->
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-2 PENDING START -->
+
+     <div class="container-fluid px-0 pt-5" id="pendingloan2" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+                <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+                </button>
+            </div>
+            
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b> PRINCIPAL [RM] </b></th>
+                    <th><b> PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b> FINANCING BALANCE [RM] </b></th>
+                    <!-- <th><b> FINANCING ID </b></th> -->
+                    <th ><b> STATUS </b></th>
+                    <th><b> DAY PAST DUE </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 500.00 </td>
+                    <td> 20 </td>
+                    <td> 0 </td>
+                    <td> 11,960.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 500.00 </td>
+                    <td> 20 </td>
+                    <td> 0 </td>
+                    <td> 11,440.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 500.00 </td>
+                    <td> 20 </td>
+                    <td> 0 </td>
+                    <td> 10,400.00 </td>
+                    <!-- <td> LN0046 </td> -->
+                  <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 500.00 </td>
+                    <td> 20 </td>
+                    <td> 0 </td>
+                    <td> 10,400.00 </td>
+        <!-- <td> LN0098 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 500.00 </td>
+                    <td> 20 </td>
+                    <td> 0 </td>
+                    <td> 9,880.00 </td>
+        <!-- <td> LN0035 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 500.00 </td>
+                    <td> 20 </td>
+                    <td> 0 </td>
+                    <td> 9,360.00 </td>
+                    <!-- <td> LN0066 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #F29339; border-radius: 1px;" id="overdue">PENDING  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 500.00 </td>
+                <td> 20 </td>
+                <td> 0 </td>
+                <td> 8,840.00 </td>
+                <!-- <td> LN0066 </td> -->
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                </td>
+                <td> 0 </td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 500.00 </td>
+            <td> 20 </td>
+            <td> 0 </td>
+            <td> 8,320.00 </td>
+            <!-- <td> LN0054 </td> -->
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+            </td>
+            <td> 0 </td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 7,800.00 </td>
+        <!-- <td> LN0088 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 7,280.00 </td>
+        <!-- <td> LN0097 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class=" text-start">
+        <td class="text-center"> 11 </td>
+        <td> 02/11/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 6,760.00 </td>
+        <!-- <td> LN0031 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 6,240.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 13 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 5,720.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 14 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 5,200.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 15 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 4,680.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 16 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 4,160.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 17 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 3,640.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 18 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 3,120.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 19 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 2,600.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 20 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 2,080.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 21 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 1,560.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 22 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 1,040.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class=" text-start">
+        <td class="text-center"> 23 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 520.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+    <tr class="table-light text-start">
+        <td class="text-center"> 24 </td>
+        <td> 12/12/2021 </td>
+        <td> 500.00 </td>
+        <td> 20 </td>
+        <td> 0 </td>
+        <td> 0.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-2 PENDING END -->
+
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-3 PENDING START -->
+
+     <div class="container-fluid px-0 pt-5" id="pendingloan3" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+                <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+                </button>
+            </div>
+            
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b> PRINCIPAL [RM] </b></th>
+                    <th><b> PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b> FINANCING BALANCE [RM] </b></th>
+                    <!-- <th><b> FINANCING ID </b></th> -->
+                    <th ><b> STATUS </b></th>
+                    <th><b> DAY PAST DUE </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10.33 </td>
+                    <td> 0 </td>
+                    <td> 2,321.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10.33 </td>
+                    <td> 0 </td>
+                    <td> 2,221.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10.33 </td>
+                    <td> 0 </td>
+                    <td> 2,521.00 </td>
+                    <!-- <td> LN0046 </td> -->
+                  <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #F29339; border-radius: 1px;" id="overdue">PENDING  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10.33 </td>
+        <td> 0 </td>
+        <td> 3,721.00 </td>
+        <!-- <td> LN0098 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10.33 </td>
+        <td> 0 </td>
+        <td> 3,421.00 </td>
+        <!-- <td> LN0035 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 250.00 </td>
+                    <td> 10.33 </td>
+                    <td> 0 </td>
+                    <td> 3,521.00 </td>
+                    <!-- <td> LN0066 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 250.00 </td>
+                <td> 10.33</td>
+                <td> 0 </td>
+                <td> 3,821.00 </td>
+                <!-- <td> LN0066 </td> -->
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN   </button> 
+                </td>
+                <td> 0 </td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 250.00 </td>
+            <td> 10.33 </td>
+            <td> 0 </td>
+            <td> 1,121.00 </td>
+            <!-- <td> LN0054 </td> -->
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+            </td>
+            <td> 0 </td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 250.00 </td>
+        <td> 10.33 </td>
+        <td> 0 </td>
+        <td> 1,821.00 </td>
+        <!-- <td> LN0088 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN   </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 250.00 </td>
+        <td> 10.33 </td>
+        <td> 0 </td>
+        <td> 521.00 </td>
+        <!-- <td> LN0097 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class=" text-start">
+        <td class="text-center"> 11 </td>
+        <td> 02/11/2021 </td>
+        <td> 250.00 </td>
+        <td> 10.33</td>
+        <td> 0 </td>
+        <td> 321.00 </td>
+        <!-- <td> LN0031 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 250.00 </td>
+        <td> 10.33 </td>
+        <td> 0 </td>
+        <td> 0.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN   </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-3 PENDING END -->
+
+    </div>
+
+    <!-- T3 FOR PENDING END -->
+
+    <!-- T4 FOR OVERDUE START -->
+    <div class="container-fluid" id="appfinanceapp4" style="display: none;">
+        <div class="col-12">
+            <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">APPROVE FINANCING APPLICATION - [OVERDUE]</h4>
+            
+        </div>
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    <th> <i class="bi bi-check2-square"></i> </th>
+                    <th><b># </b></th>
+                    <th><b>FINANCING ID </b></th>
+                    <th><b>COMPANY NAME </b></th>
+                    <th><b>FINANCING AMOUNT [RM] </b></th>
+                    <th><b>FINANCING TENURE [MONTHS] </b></th>
+                   
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class=" text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop4(1)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 1 </td>
+                    <td> LN0088 </td>
+                    <td> Electronics Sdn Bhd </td>
+                    <td> 15,000 </td>
+                    <td> 12 </td>
+                    
+            </tr>
+            <tr class="table-light text-start">
+                <td  class="text-center">
+                    <input class="form-check-input position-static" onclick="dropondrop4(2)" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></td>
+                    <td class="text-center"> 2 </td>
+                    <td> LN0077 </td>
+                    <td> Highlander Car sales Sdn Bhd </td>
+                    <td> 7,000 </td>    
+                    <td> 12 </td>   
+                    
+            </tr>
+          
+           
+            </tbody>
+        </table>
+    </div>
+
+   <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-2 OVERDUE START -->
+
+
+    <div class="container-fluid px-0 pt-5" id="overdueloan1" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+                <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+                </button>
+            </div>
+            
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b> PRINCIPAL [RM] </b></th>
+                    <th><b> PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b> FINANCING BALANCE [RM] </b></th>
+                    <!-- <th><b> FINANCING ID </b></th> -->
+                    <th ><b> STATUS </b></th>
+                    <th><b> DAYS DELAYED </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 1,250.00 </td>
+                    <td> 25 </td>
+                    <td> 0 </td>
+                    <td> 14,025.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 1,250.00 </td>
+                    <td> 25 </td>
+                    <td> 0 </td>
+                    <td> 12,750.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 1,250.00 </td>
+                    <td> 25 </td>
+                    <td> 0 </td>
+                    <td> 11,475.00 </td>
+                    <!-- <td> LN0046 </td> -->
+                  <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 1,250.00 </td>
+                    <td> 25 </td>
+                    <td> 0 </td>
+                    <td> 10,200.00 </td>
+                    <!-- <td> LN0098 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 1,250.00 </td>
+                    <td> 25 </td>
+                    <td> 0 </td>
+                    <td> 8,925.00 </td>
+                    <!-- <td> LN0035 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 1,250.00 </td>
+                    <td> 25 </td>
+                    <td> 5 </td>
+                    <td> 7,650.00 </td>
+                    <!-- <td> LN0066 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: rgb(204, 55, 36); border-radius: 1px;" id="overdue">OVERDUE  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 1,250.00 </td>
+                <td> 25 </td>
+                <td> 5 </td>
+                <td> 6,375.00 </td>
+                <!-- <td> LN0066 </td> -->
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: rgb(204, 55, 36); border-radius: 1px;" id="overdue">OVERDUE  </button> 
+                </td>
+                <td> 0 </td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 1,250.00 </td>
+            <td> 25 </td>
+            <td> 0 </td>
+            <td> 5,100.00 </td>
+            <!-- <td> LN0054 </td> -->
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+            </td>
+            <td> 0 </td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 1,250.00 </td>
+        <td> 25 </td>
+        <td> 0 </td>
+        <td> 3,825.00 </td>
+        <!-- <td> LN0088 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 1,250.00 </td>
+        <td> 25 </td>
+        <td> 0 </td>
+        <td> 2,550.00 </td>
+        <!-- <td> LN0097 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class=" text-start">
+        <td class="text-center"> 11 </td>
+        <td> 11/11/2021 </td>
+        <td> 1,250.00 </td>
+        <td> 25 </td>
+        <td> 0 </td>
+        <td> 1,275.00 </td>
+        <!-- <td> LN0031 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 1,250.00 </td>
+        <td> 25 </td>
+        <td> 0 </td>
+        <td> 0.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-2 OVERDUE END -->
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-2 OVERDUE START -->
+
+     <div class="container-fluid px-0 pt-5" id="overdueloan2" style=" background-color: white; border-radius: 0px;">
+        <div class="container-fluid">
+            <div class="col-12">
+                <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+                <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                    <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+                </button>
+            </div>
+            
+        <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+            <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+            style="color: rgb(0, 0, 0); overflow: scroll; ">
+            <thead>
+                <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                    
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b> PRINCIPAL [RM] </b></th>
+                    <th><b> PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b> FINANCING BALANCE [RM] </b></th>
+                    <!-- <th><b> FINANCING ID </b></th> -->
+                    <th><b>STATUS </b></th>
+                    <th><b> DAYS DELAYED </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 585.33 </td>
+                    <td> 11.67 </td>
+                    <td> 0 </td>
+                    <td> 6,545.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 585.33 </td>
+                    <td> 11.67 </td>
+                    <td> 0 </td>
+                    <td> 5,950.00 </td>
+                    <!-- <td> LN0067 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 585.33 </td>
+                    <td> 11.67 </td>
+                    <td> 0 </td>
+                    <td> 5,355.00 </td>
+                    <!-- <td> LN0046 </td> -->
+                  <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 585.33 </td>
+                    <td> 11.67 </td>
+                    <td> 0 </td>
+                    <td> 4,760.00 </td>
+                    <!-- <td> LN0098 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 585.33 </td>
+                    <td> 11.67 </td>
+                    <td> 0 </td>
+                    <td> 4,165.00 </td>
+                    <!-- <td> LN0035 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 585.33 </td>
+                    <td> 11.67 </td>
+                    <td> 5 </td>
+                    <td> 3,570.00 </td>
+                    <!-- <td> LN0066 </td> -->
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: rgb(204, 55, 36); border-radius: 1px;" id="overdue">OVERDUE  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 585.33 </td>
+                <td> 11.67 </td>
+                <td> 0 </td>
+                <td> 2,975.00 </td>
+                <!-- <td> LN0066 </td> -->
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                </td>
+                <td> 0 </td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 585.33 </td>
+            <td> 11.67 </td>
+            <td> 0 </td>
+            <td> 2,380.00 </td>
+            <!-- <td> LN0054 </td> -->
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">Open  </button> 
+            </td>
+            <td> 0 </td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 585.33 </td>
+        <td> 11.67 </td>
+        <td> 0 </td>
+        <td> 1,785.00 </td>
+        <!-- <td> LN0088 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 585.33 </td>
+        <td> 11.67 </td>
+        <td> 0 </td>
+        <td> 1,190.00 </td>
+        <!-- <td> LN0097 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class=" text-start">
+        <td class="text-center"> 11 </td>
+        <td> 11/11/2021 </td>
+        <td> 585.33 </td>
+        <td> 11.67 </td>
+        <td> 0 </td>
+        <td> 595.00 </td>
+        <!-- <td> LN0031 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 585.33 </td>
+        <td> 11.67 </td>
+        <td> 0 </td>
+        <td> 0.00 </td>
+        <!-- <td> LN0073 </td> -->
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+
+     <!-- LOAN REPAYMENT SCHEDULE TABLE 3 FOR DROPDOWN RADIO BUTTON 1-2 OVERDUE END -->
+
+    </div>
+
+     <!-- T4 FOR OVERDUE END -->
+
+
+</div>
+
+
+
+<!-- Loan repayment schedule Table_ALL start -->
+<br>
+
+<div class="container-fluid px-0 pt-5" id="loan_ALL" style=" background-color: white; border-radius: 0px;">
+    <div class="container-fluid">
+        <div class="col-12">
+            <h4 style="float: left; margin-top: 3px; font-weight: 900; color: #31669c">FINANCING REPAYMENT SCHEDULE</h4>
+            <button class="btn btn-sm" type="button" style=" border-radius: 5px; float: right; color: white; background-color: #18A0FB"> 
+                <i class="bi bi-download " style=" font-size:large;"> </i>  Download Report 
+            </button>
+        </div>
+        
+    <div class="container-fluid overflow-auto px-0" style="  max-height: 500px;">
+        <table class="table table-responsive table-bordered table-hover text-center "  id="tbl_exporttable_to_xls"
+        style="color: rgb(0, 0, 0); overflow: scroll; ">
+        <thead>
+            <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                
+                    <th><b>#</b></th>
+                    <th><b> PAYMENT DATE </b></th>
+                    <th><b> PRINCIPAL [RM] </b></th>
+                    <th><b> PROFIT [RM] </b></th>
+                    <th><b> PENALTIES [RM] </b></th>
+                    <th><b> FINANCING BALANCE [RM] </b></th>
+                    <th ><b> STATUS </b></th>
+                    <th><b> DAY PAST DUE </b></th>
+                    
+                </tr>
+            </thead>
+            <tbody style="background-color: white;" id="searchtable">
+            <tr class="text-start">
+                    <td class="text-center"> 1 </td>
+                    <td> 01/01/2021 </td>
+                    <td> 250 </td>
+                    <td> 20.89 </td>
+                    <td> 0 </td>
+                    <td> 2789.11 </td>
+                    <td  class="text-center" >
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                    <td class="text-center"> 2 </td>
+                    <td> 02/02/2021 </td>
+                    <td> 250 </td>
+                    <td> 20.89 </td>
+                    <td> 0</td>
+                    <td> 2518.22 </td>
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                    <td class="text-center"> 3 </td>
+                    <td> 03/03/2021 </td>
+                    <td> 250 </td>
+                    <td> 20.89 </td>
+                    <td> 0 </td>
+                    <td> 2247.33 </td>
+                  <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+                   </td>
+                     <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 4 </td>
+                    <td> 04/04/2021 </td>
+                    <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 1976.44 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 5 </td>
+                    <td> 05/05/2021 </td>
+                    <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 1705.55 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: green; border-radius: 1px;" id="overdue">PAID  </button> 
+        </td>
+        <td> 0 </td>
+            </tr>
+            <tr class="table-light text-start">
+                <td class="text-center"> 6 </td>
+                    <td> 06/06/2021 </td>
+                    <td> 250 </td>
+                    <td> 20.89 </td>
+                    <td> 0 </td>
+                    <td> 1434.66</td>
+                    <td  class="text-center">
+                        <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                    </td>
+                    <td> 0 </td>
+            </tr>
+            <tr class="text-start">
+                <td class="text-center"> 7 </td>
+                <td> 07/07/2021 </td>
+                <td> 250 </td>
+                <td> 20.89 </td>
+                <td> 0 </td>
+                <td> 1163.77 </td>
+                <td  class="text-center">
+                    <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+                </td>
+                <td> 0</td>
+            </tr>
+        <tr class="table-light text-start">
+            <td class="text-center"> 8 </td>
+            <td> 08/08/2021 </td>
+            <td> 250 </td>
+            <td> 20.89 </td>
+            <td> 0 </td>
+            <td> 892.88 </td>
+            <td  class="text-center">
+                <button class="btn btn-sm" type="text" style=" color:#ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+            </td>
+            <td> 0</td>
+    </tr> 
+    
+    <tr class="text-start">
+        <td class="text-center"> 9 </td>
+        <td> 09/09/2021 </td>
+        <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0</td>
+        <td> 621.99</td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 10 </td>
+        <td> 10/10/2021 </td>
+        <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 351.1 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="text-start">
+        <td class="text-center"> 11 </td>
+        <td> 11/11/2021 </td>
+        <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 80.21 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0 </td>
+    </tr>
+    
+    <tr class="table-light text-start">
+        <td class="text-center"> 12 </td>
+        <td> 12/12/2021 </td>
+        <td> 250 </td>
+        <td> 20.89 </td>
+        <td> 0 </td>
+        <td> 0 </td>
+        <td  class="text-center">
+            <button class="btn btn-sm" type="text" style=" color: #ffff; background-color: #18A0FB; border-radius: 1px;" id="overdue">OPEN  </button> 
+        </td>
+        <td> 0</td>
+    </tr>
+
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+
+<!-- FINANCING Repayment schedule Table 1 end -->
+
+
+<!--  -->
+</div>            
+<!-- Footer Start -->
+      <footer class="footer pt-3">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-lg-between">
+                <div class="col-lg-6 mb-lg-0 mb-4">
+                    <div class="copyright text-center text-sm text-muted text-lg-start">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>,
+                        made with <i class="fa fa-heart"></i> by
+                        <a href="#" class="font-weight-bold" target="_blank">Kollect</a>
+                        for a better user experince.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    </main>
+<!--First section End -->
+
+
+<!-- Mark Paid Modal START -->
+
+    
+<div class="modal fade focus" id="MarkpaidModal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content" >
+        <div class="modal-header">
+        
+        <div class="container">
+            <div class="dropdown">
+                <button id="innermethodswitch" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Payment Method
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                  <li><a id="chshow" class="dropdown-item" href="#" onclick="paymenttype(1)">Cheque</a></li>
+                  <li><a id="ftshow" class="dropdown-item" href="#" onclick="paymenttype(2)">Fund Transfer</a></li>
+                  <li><a id="otcshow" class="dropdown-item" href="#" onclick="paymenttype(3)">Over The Counter (Cash)</a></li>
+                </ul>
+              </div>
+            <form>
+                <div class="mb-3" id="bankshow">
+                    <label for="exampleInputText" class="form-label">Bank</label>
+                    <input type="text" class="form-control" >
+                  </div>
+                <div class="mb-3" id="amountshow">
+                  <label for="exampleInputNumber" class="form-label">Amount</label>
+                  <input type="number" class="form-control" >
+                </div>
+                <div class="mb-3"  id="rnushow">
+                    <label for="exampleInputNumber" class="form-label">Reference Number</label>
+                    <input type="number" class="form-control">
+                  </div>
+                  <div class="mb-3" id="dateshow" >
+                    <label for="markedpaid" class="form-label" >Date</label>
+                    <input id="financing_date" placeholder="dd/mm/yy" type="date" class="form-control" aria-describedby="">
+                  </div>
+                
+                <button type="submit" class="btn btn-primary float-end" data-bs-dismiss="modal">Submit</button>
+                
+              </form>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!-- Mark Paid Modal END -->
+
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/popper.min.js"></script>
+    <script src="./assets/js/core/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="./assets/js/plugins/chartjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <script src="progressbarscript.js"></script>
+
+
+    <!-- flaterpickr-->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+
+    config= {
+    
+    // enableTime: true,  
+    altInput: true,
+    altFormat: "j F, Y"
+    // altFormat: "j F, Y H:i"
+    
+    }
+    
+        flatpickr("input[id=financing_date]", config);
+       
+    
+</script>
+
+<script>
+    showpage(1);
+    paymenttype(0);
+</script>
+
+
+<!-- Sidebar Function -->
+
+<script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+            damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+</script>
+
+<!-- Payment Method dropdown START-->
+
+<script>
+
+    function paymenttype(x) {
+            if(x==1) {
+                document.getElementById("bankshow").style.display="block";
+                document.getElementById("amountshow").style.display = "block";
+                document.getElementById("rnushow").style.display="block";
+                document.getElementById("dateshow").style.display = "block";
+                //Change what is shown as the payment method
+                document.getElementById("innermethodswitch").innerText = "Cheque";
+                
+            }
+
+            else if(x==2){
+                document.getElementById("bankshow").style.display="block";
+                document.getElementById("amountshow").style.display = "block";
+                document.getElementById("rnushow").style.display="block";
+                document.getElementById("dateshow").style.display = "block";
+                //Change what is shown as the payment method
+                document.getElementById("innermethodswitch").innerText = "Fund Transfer";  
+                
+                
+            }
+
+            else if(x==3){
+                document.getElementById("bankshow").style.display = "none";
+                document.getElementById("amountshow").style.display = "block";
+                document.getElementById("rnushow").style.display = "none";
+                document.getElementById("dateshow").style.display = "block";  
+                //Change what is shown as the payment method
+                document.getElementById("innermethodswitch").innerText = "Over The Counter (Cash)";  
+            }
+            else if(x==0){
+                document.getElementById("bankshow").style.display = "none";
+                document.getElementById("amountshow").style.display = "none";
+                document.getElementById("rnushow").style.display = "none";
+                document.getElementById("dateshow").style.display = "none";  
+                //Change what is shown as the payment method
+                document.getElementById("innermethodswitch").innerText = "Payment Method";  
+            }
+            return;
+        }
+
+</script>
+
+<!-- Payment Method dropdown END-->
+
+
+<!-- Radio button dropdown start -->
+
+<script>
+
+function dropondrop0(x) {
+if(x==0){
+            document.getElementById("loan_ALL").style.display="block";
+           
+           
+        }
+else if(x==1) {
+            document.getElementById("loan_ALL").style.display="none";
+            
+            
+}
+}
+
+</script>
+
+<script>
+
+// DROPDOWN RADIO BUTTON FOR PAID
+    function dropondrop1(x) {
+if(x==1){
+        document.getElementById("paidloan1").style.display="block";
+        document.getElementById("paidloan2").style.display="none";
+        document.getElementById("paidloan3").style.display="none";
+    }
+else if(x==2)
+{
+        document.getElementById("paidloan2").style.display="block";
+        document.getElementById("paidloan1").style.display="none";
+        document.getElementById("paidloan3").style.display="none";
+}
+
+else if(x==3)
+{
+        document.getElementById("paidloan3").style.display="block";
+        document.getElementById("paidloan1").style.display="none";
+        document.getElementById("paidloan2").style.display="none";
+}
+else if(x==0) {
+        document.getElementById("paidloan1").style.display="none";
+        document.getElementById("paidloan2").style.display="none";
+        document.getElementById("paidloan3").style.display="none";
+    
+}
+}
+
+
+</script>
+
+<script>
+
+
+function dropondrop2(x) {
+    if(x==1){
+        document.getElementById("markedpaidloan1").style.display="block";
+        document.getElementById("markedpaidloan2").style.display="none";
+        
+    }
+else if(x==2)
+{
+        document.getElementById("markedpaidloan2").style.display="block";
+        document.getElementById("markedpaidloan1").style.display="none";
+       
+}
+
+else if(x==0) {
+        document.getElementById("markedpaidloan1").style.display="none";
+        document.getElementById("markedpaidloan2").style.display="none";
+        
+    
+}
+}
+
+
+</script>
+
+<script>
+
+
+function dropondrop3(x) {
+    if(x==1){
+        document.getElementById("pendingloan1").style.display="block";
+        document.getElementById("pendingloan2").style.display="none";
+        document.getElementById("pendingloan3").style.display="none";
+    }
+else if(x==2)
+{
+        document.getElementById("pendingloan2").style.display="block";
+        document.getElementById("pendingloan1").style.display="none";
+        document.getElementById("pendingloan3").style.display="none";
+}
+
+else if(x==3)
+{
+        document.getElementById("pendingloan3").style.display="block";
+        document.getElementById("pendingloan1").style.display="none";
+        document.getElementById("pendingloan2").style.display="none";
+}
+else if(x==0) {
+        document.getElementById("pendingloan1").style.display="none";
+        document.getElementById("pendingloan2").style.display="none";
+        document.getElementById("pendingloan3").style.display="none";
+    
+}
+}
+
+
+</script>
+
+<script>
+
+
+    function dropondrop4(x) {
+        if(x==1){
+        document.getElementById("overdueloan1").style.display="block";
+        document.getElementById("overdueloan2").style.display="none";
+       
+    }
+else if(x==2)
+{
+        document.getElementById("overdueloan2").style.display="block";
+        document.getElementById("overdueloan1").style.display="none";
+        
+}
+
+
+else if(x==0) {
+        document.getElementById("overdueloan1").style.display="none";
+        document.getElementById("overdueloan2").style.display="none";
+        
+    
+}
+}
+
+
+</script>
+
+
+
+<!-- Radio button dropdown end -->
+
+<!-- Paid & marked paid & pending & overdue start -->
+
+<script>
+    function paidshow (){
+        document.getElementById("appfinanceapp0").style.display="none";
+                document.getElementById("appfinanceapp1").style.display="block";
+                document.getElementById("appfinanceapp2").style.display = "none";
+                document.getElementById("appfinanceapp3").style.display = "none";
+                document.getElementById("appfinanceapp4").style.display = "none";
+                document.getElementById("loan_ALL").style.display="none";
+                document.getElementById("paidloan1").style.display="none";
+                document.getElementById("paidloan2").style.display="none";
+                document.getElementById("paidloan3").style.display="none";
+
+    }
+
+    function markPaid (){
+                document.getElementById("appfinanceapp0").style.display="none";
+                document.getElementById("appfinanceapp1").style.display="none";
+                document.getElementById("appfinanceapp2").style.display = "block";
+                document.getElementById("appfinanceapp3").style.display = "none";
+                document.getElementById("appfinanceapp4").style.display = "none";
+                document.getElementById("loan_ALL").style.display="none";
+                document.getElementById("markedpaidloan1").style.display="none";
+                document.getElementById("markedpaidloan2").style.display="none";
+               
+    }
+
+    function pending (){
+                document.getElementById("appfinanceapp0").style.display="none";
+                document.getElementById("appfinanceapp1").style.display="none";
+                document.getElementById("appfinanceapp2").style.display = "none";
+                document.getElementById("appfinanceapp3").style.display = "block";
+                document.getElementById("appfinanceapp4").style.display = "none";
+                document.getElementById("loan_ALL").style.display="none";
+                document.getElementById("pendingloan1").style.display="none";
+                document.getElementById("pendingloan2").style.display="none";
+                document.getElementById("pendingloan3").style.display="none";
+    }
+
+    function overdue (){
+                document.getElementById("appfinanceapp0").style.display="none";
+                document.getElementById("appfinanceapp1").style.display="none";
+                document.getElementById("appfinanceapp2").style.display = "none";
+                document.getElementById("appfinanceapp3").style.display = "none";
+                document.getElementById("appfinanceapp4").style.display = "block";
+                document.getElementById("loan_ALL").style.display="none";
+                document.getElementById("overdueloan1").style.display="none";
+                document.getElementById("overdueloan2").style.display="none";
+    }
+
+    function companyall (){
+        document.getElementById("appfinanceapp0").style.display="block";
+        document.getElementById("appfinanceapp1").style.display="none";
+        document.getElementById("appfinanceapp2").style.display = "none";
+        document.getElementById("appfinanceapp3").style.display = "none";
+        document.getElementById("appfinanceapp4").style.display = "none";
+                
+    }
+</script>
+
+
+<!-- Paid & marked paid & pending & overdue end-->
+
+
+<script>dropondrop0(1);</script>
+
+
+
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/soft-ui-dashboard.min.js?v=1.0.6"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,2737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <title>
+        Hijrah Selangor Customer Registration
+    </title>
+    
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="./progressbarstyle.css" rel="stylesheet" />
+    <link href="./signaturestyle.css" rel="stylesheet" />
+    <link href="./assets/css/intlTelInput.css" rel="stylesheet" />
+    <link href="./assets/css/demo.css" rel="stylesheet" />
+    <link href="./customcss.css" rel="stylesheet" />
+
+    
+     <!-- flaterpickr-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="./assets/css/soft-ui-dashboard.css?v=1.0.6" rel="stylesheet" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/soft-ui-dashboard.min.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script src="https://kit.fontawesome.com/b05c17364c.js" crossorigin="anonymous"></script>
+   
+    
+</head>
+
+
+
+
+
+
+
+
+
+<body class="g-sidenav-show" style="max-width: 100%; overflow-x: hidden; font-family: Arial, Helvetica, sans-serif;">
+    <!-- Navbar START -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-0 shadow- border-radius-md fixed-start sticky-top border-bottom" id="navbarBlur"
+    navbar-scroll="true" style="background-color: white; position: fixed; width: 100%;">
+    <div class="container-fluid py-0 px-3" >
+        <nav aria-label="breadcrumb ">
+
+            <a class="navbar-brand font-weight-bolder mb-0 fs-4 align-middle " href="#">
+                <img src="assets\img\logos\HSLogo.png" height="50" class="d-inline-block" alt="">
+                Hijrah Selangor
+            </a>
+        </nav>
+    </nav>
+    <!-- Navbar END -->
+
+
+
+
+
+    <!-- Sidebar START -->
+    <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 mt-6 my-0 px-0 fixed-start ms-0 bg-gray-200" id="sidenav-main" style="overflow: hidden;">
+        <hr class="horizontal dark mt-0" >
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main" >
+            <ul class="navbar-nav navspacer">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Customer Dashboard/dashboard.html" >
+                        <i class="bi bi-speedometer2" style=" font-size:x-large; margin-left: 5px;"></i>
+                        <span class="nav-link-text" style="font-size: 13.5px;">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="./Customer Financing Application Schedule/financeappschedule_Customer.html" >
+                        <i class="fa-solid fa-calendar-minus" style=" font-size:x-large; margin-left: 5px;"></i>
+                        <span class="nav-link-text" style="font-size: 13.5px;">Financing Application Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-item understyle">
+                    <a class="nav-link active" href="./HS_Reg.html" >
+                        <i class="fa-solid fa-truck-ramp-box" style=" font-size:large; margin-left: 5px;"></i>
+                        <span class="nav-link-text" style="font-size: 13.5px;">Customer Registration Form </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- Sidebar END -->
+
+
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-md">
+
+
+   
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-lg-12 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-lg-12"> 
+
+
+                                <!-- Step Progress Bar BEGIN --> 
+                                    <div class="main pt-7" >
+                                        <ul style="align-items: center; text-align: center;">
+                                            <li style="align-items: center;"> 
+                                                <div class="progress one" >     <!-- Show the Customer Onboarding Page -->
+                                                    <p>1</p>
+                                                    <i style= "font-size: 26px; color:#ffffff;" class="bi bi-check-lg"></i>
+                                                </div>
+                                                <p style="z-index: 2;" class="text">Personal & Corporate &nbsp;&nbsp;&nbsp;<br> Information &nbsp;&nbsp;</p> <!--onclick="show1()"-->
+                                            </li>
+                                            <li style="align-items: center;">   <!--onclick="showpage(1)">-->
+                                                <div class="progress two">           <!-- Show the Document Submission Page -->
+                                                    <p>2</p>
+                                                    <i  style= "font-size: 26px; color:#ffffff;" class="bi bi-check-lg"></i>
+                                                </div>
+                                                <p style="z-index: 2;" class="text">References Information &nbsp;<br>&nbsp; &nbsp;</p> <!--onclick="show1()"-->
+                                            </li>
+                                            <li style="align-items: center;">   <!--onclick="showpage(1)">-->
+                                                <div class="progress three" >       <!-- Show the Document Verification Page -->
+                                                    <p>3</p>
+                                                    <i style= "font-size: 26px; color:#ffffff;" class="bi bi-check-lg"></i>
+                                                </div>
+                                                <p style="z-index: 2;" class="text">Financing application <br> Summary & Declaration</p> <!--onclick="show1()"-->
+                                            </li>
+                                            <li style="align-items: center; margin-left: 6px;"> <!--onclick="showpage(1)">-->
+                                                <div class="progress four" >          <!-- Show the Application Approval Page -->
+                                                    <p>4</p>
+                                                    <i style= "font-size: 26px; color:#ffffff;" class="bi bi-check-lg"></i>
+                                                </div>
+                                                <p style="z-index: 2;" class="text">Business Operation <br> Analysis & Submission</p> <!--onclick="show1()"-->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                                <!-- Step Progress Bar END -->
+
+
+
+
+
+
+
+
+
+
+<!-- Personal & Corporate Information Process START-->
+    <!-- Registration Page 1 -->
+                            <div id="personalandcorporateinfo" style="display: block;">
+                                    <div class="row">
+                                        <form action="">
+                                                <div class="d-grid gap-2 d-md-block mb-2">
+                                                    <a class="btn btn-primary me-md-2" target="_blank" id="downloadlink"><i style="font-size: large; vertical-align: middle;" class="bi bi-download" ></i>&nbsp; &nbsp; Preview Form
+                                                    </a>
+                                                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#uploadModal"> <i style="font-size: large; vertical-align: middle;" class="bi bi-upload"></i> &nbsp; &nbsp; Upload Form
+                                                    </button>
+                                                    <!-- Dropdown Button to select type of Financing -->
+                                                    <!-- <button class="btn btn-primary dropdown-toggle pt-3 pb-3 px-4" style="float: right;" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Financing Type
+                                                      </button>
+                                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <li><a class="dropdown-item" href="javascript:;" onclick="Financingtype(1);">Individual Financing</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:;" onclick="Financingtype(2);">Corporate Financing</a></li>
+                                                      </ul> -->
+                                                  </div>
+                                        </form>
+                                    </div>
+                                    <div class="container pt-5 mt-4" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                        <h4 class="pb-3" style="text-align: center;">Type of Financing</h4> <br>
+                                        <form class="row g-3 pb-3 mx-2 mb-5" id="formdetails">
+                                            <div class="col-2"></div>
+                                            <div class="col-3">
+                                                <input class="form-check-input position-static" onclick="Financingtype(1);" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></input>
+                                                <label style="font-size: 16px;"> Individual Financing </label>
+                                            </div>
+                                            <div class="col-3"></div>
+                                            <div class="col-3">
+                                                <input class="form-check-input position-static" onclick="Financingtype(2);" type="radio" name="blankRadio" id="blankRadio1" style="color:none"></input>
+                                                <label style="font-size: 16px;"> Corporate Financing </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    
+                                <div id="individual">
+                                    <div class="container pb-10 pt-5 mb-5 mt-4"  style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                        <h4 class="pb-5" style="text-align: center;">Personal Information</h4> <br>
+                                        <form class="row g-3 mx-2" id="formdetails">
+                                            
+                                            
+                                            <div class="col-3">
+                                                <label for="firstname" class="col-form-label">First Name: </label>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <input type="text" id="firstname" placeholder="First Name" class="form-control shadow-sm text-center" aria-describedby="" value="John">
+                                            </div>
+
+                                            <div class="col-3">
+                                                <label for="lastname" class="col-form-label">Last Name: </label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="text" id="lastname" placeholder="Last Name" class="form-control shadow-sm text-center" aria-describedby="" value="Doe">
+                                            </div>
+
+                                            <div class="col-3">
+                                                <label for="email" class="col-form-label">Email Address: </label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="email" id="email" placeholder="Email Address" class="form-control shadow-sm text-center" aria-describedby="" value="johndoe32@gmail.com">
+                                            </div>
+
+                                            <div class="col-3">
+                                                <label for="compregno" class="col-form-label">Company Registration Number: </label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="text" id="compregno" placeholder="Company Registration Number" class="form-control shadow-sm text-center" aria-describedby="" value="223344-K">
+                                            </div>
+
+                                            <div class="col-3">
+                                                <label for="mobnum" class="col-form-label">Mobile Number: </label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="tel" id="mobnum" placeholder="Mobile Number" class="form-control shadow-sm text-center px-6" aria-describedby="" value="+60">
+                                            </div>
+                                            
+                                            <div class="col-3">
+                                                <label for="idnum" class="col-form-label">Identification Number: </label>
+                                            </div>
+                                            <div class="col-3" style="display: flex;">
+                                                    <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                                        <option selected>MyPR </option>
+                                                        <option>NRIC (Old)</option>
+                                                        <option>MyTentera</option>
+                                                        <option>MyKad</option>
+                                                      </select>
+                                                    <input type="text" id="idnum" placeholder="Identification Number" class="form-control shadow-sm text-center" aria-describedby="" style="border-radius: 0px 7px 7px 0px;" value="5645162949194">
+                                            </div>
+                                            
+
+                                            <div class="col-3">
+                                                <label for="gender" class="col-form-label">Gender: </label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="text" id="gender" placeholder="Gender" class="form-control shadow-sm text-center" aria-describedby="" value="Male">
+                                            </div>
+
+                                            <div class="col-3">
+                                                <label for="mstatus" class="col-form-label">Marital Status: </label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="text" id="mstatus" placeholder="Marital Status" class="form-control shadow-sm text-center" aria-describedby="" value="Single">
+                                            </div>
+                                            <div class="col-12 pb-3">
+                                                <label for="reg_res_add4" class="col-form-label">Registered Address: </label>
+                                                <i style="font-size: large; vertical-align: middle;" class="bi bi-plus-circle-fill hovermode" onclick="addBox1()"></i>
+                                            </div>
+                                                <div class="col-4" style="float: left;" id="add1"></div>            
+                                        </form>
+                                    </div>
+
+
+
+
+                                    <!-- Director Details -->
+                                    <div class="container pb-5 pt-5 mb-5 mt-4" id="Financing_show" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                    <h4 class="pb-5" style="text-align: center;">Director Details</h4> <br>
+                                    <form class="row g-3 mx-2" id="formdetails">
+                                        
+                                        
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Director#1: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Director 1 Nationality: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="idnum" class="col-form-label">Director 1 ID: </label>
+                                        </div>
+                                        <div class="col-3" style="display: flex;">
+                                                <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                                    <option selected>MyPR </option>
+                                                    <option>NRIC (Old)</option>
+                                                    <option>MyTentera</option>
+                                                    <option>MyKad</option>
+                                                  </select>
+                                                <input type="text" id="idnum" placeholder="Identification Number" class="form-control shadow-sm text-center" aria-describedby="" style="border-radius: 0px 7px 7px 0px;" value="">
+                                        </div>
+
+
+                                        <div class="col-12"></div>
+                                        <br><br>
+
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Director#2: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Director 2 Nationality: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="idnum" class="col-form-label">Director 2 ID: </label>
+                                        </div>
+                                        <div class="col-3" style="display: flex;">
+                                                <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                                    <option selected>MyPR </option>
+                                                    <option>NRIC (Old)</option>
+                                                    <option>MyTentera</option>
+                                                    <option>MyKad</option>
+                                                  </select>
+                                                <input type="text" id="idnum" placeholder="Identification Number" class="form-control shadow-sm text-center" aria-describedby="" style="border-radius: 0px 7px 7px 0px;" value="">
+                                        </div>
+                                    </form>
+                                </div>
+
+
+
+
+
+
+                                    <!-- Amount and purpose for Financing application -->
+                                    <div class="container pb-5 pt-5 mb-5 mt-4" id="Financing_show" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                    <h4 class="pb-5" style="text-align: center;">Amount and Purpose of Financing Application</h4> <br>
+                                    <form class="row g-3 mx-2" id="formdetails">
+                                        
+                                        
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Amount: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="tenure" class="col-form-label">Tenure: </label>
+                                        </div>
+                                        <div class="col-3" style="display: flex;">
+                                            <input type="text" id="tenure" placeholder="Tenure" style="border-radius: 7px -7px -7px 7px ; border: 1px solid #cfcfcf" class="form-control shadow-sm text-center" aria-describedby="" value="" >
+                                            <span class="input-group-text" style="border-radius: 0px 7px 7px 0px ; border: 1px solid #cfcfcf">Months</span>
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="appintrate" class="col-form-label">Applicable Profit Rate: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="appintrate" placeholder="Applicable rate of Profit" class="form-control shadow-sm text-center" aria-describedby="" value="2%" disabled>
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="purpofFinancing" class="col-form-label">Purpose of Financing Application: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="purpofFinancing" placeholder="Purpose of Financing Application" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Financing taken from different Organization -->
+                                <div class="container pb-5 pt-5 mb-5 mt-4" id="Financing_show" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                    <h4 class="pb-5" style="text-align: center;">Financing taken from other organizations</h4> <br>
+                                    <form class="row g-3 mx-2" id="formdetails">
+                                        
+                                        <div class="col-3">
+                                            <label for="amt_and_purp112" class="col-form-label">Amount: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp112" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="purpose1" class="col-form-label">Purpose: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="purpose1" placeholder="Purpose" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="nameoforg" class="col-form-label">Name of Organization: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="nameoforg" placeholder="Name of Organization" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                                </div>
+                                
+                                <div id="corporate">
+                                    <div class="container pb-5 pt-5 mb-5 mt-4" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                    <h4 class="pb-5" style="text-align: center;">Corporate Information</h4> <br>
+                                    <form class="row g-3 mx-2" id="formdetails">
+                                        
+                                        
+                                        <div class="col-3">
+                                            <label for="Companyname" class="col-form-label">Company Name: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="text" id="companyname" placeholder="Company Name" class="form-control shadow-sm text-center" aria-describedby="" value="High Ethos Sdn Bhd">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="regid" class="col-form-label">Registration ID: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="regid" placeholder="Registration ID" class="form-control shadow-sm text-center" aria-describedby="" value="223344-K">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="regstate" class="col-form-label">Registration State: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="regstate" placeholder="Registration State" class="form-control shadow-sm text-center" aria-describedby="" value="Selangor">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="comp_regdate" class="col-form-label">Company Registration Date: </label>
+                                        </div>
+                                        <div class="col-3" style="display: flex;">
+                                                <span class="input-group-text"  id="refwrap5" style="border-radius: 7px 0px 0px 7px;">  <i style="font-size: large; vertical-align: middle;" class="bi bi-calendar-week-fill"></i>
+                                                </span>
+                                                <input type="date" id="comp_regdate" style=" border-radius: 0px 0px 0px 0px;" class="text-center" onchange="dated(5)" placeholder=" &nbsp; dd/mm/yy" aria-label="dd/mm/yy" >
+                                         </div>
+                                        <div class="col-3">
+                                            <label for="mobnumcorp" class="col-form-label">Mobile Number: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="tel" id="mobnumcorp" placeholder="Mobile Number" class="form-control shadow-sm text-center px-6" aria-describedby="" value="+60">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="nature_of_bus" class="col-form-label">Nature of Business: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="nature_of_bus" placeholder="Nature of Business" class="form-control shadow-sm text-center" aria-describedby="" value="Manufacturing">
+                                        </div>
+
+                                        <!-- Gap creation START-->
+                                        <div class="col-12">
+                                        </div>
+                                        <!-- Gap creation END -->
+
+                                        <div class="col-12 pb-3">
+                                            <label for="reg_res_add9" class="col-form-label">Registered Address: </label>
+                                            <i style="font-size: large; vertical-align: middle;" class="bi bi-plus-circle-fill hovermode" onclick="addBox2()"></i>
+                                        </div>
+                                            <div class="col-4" style="float: left;" id="add2"></div>  
+                                    </form>
+                                </div>
+
+                                <!-- Director Details -->
+                                <div class="container pb-5 pt-5 mb-5 mt-4" id="Financing_show" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                    <h4 class="pb-5" style="text-align: center;">Director Details</h4> <br>
+                                    <form class="row g-3 mx-2" id="formdetails">
+                                        
+                                        
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Director#1: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Director 1 Nationality </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="idnum" class="col-form-label">Director 1 ID: </label>
+                                        </div>
+                                        <div class="col-3" style="display: flex;">
+                                                <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                                    <option selected>MyPR </option>
+                                                    <option>NRIC (Old)</option>
+                                                    <option>MyTentera</option>
+                                                    <option>MyKad</option>
+                                                  </select>
+                                                <input type="text" id="idnum" placeholder="Identification Number" class="form-control shadow-sm text-center" aria-describedby="" style="border-radius: 0px 7px 7px 0px;" value="7624-5655-9859">
+                                        </div>
+
+
+                                        <div class="col-12"></div>
+                                        <br><br>
+
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Director#2: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Director 2 Nationality </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="idnum" class="col-form-label">Director 2 ID: </label>
+                                        </div>
+                                        <div class="col-3" style="display: flex;">
+                                                <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                                    <option selected>MyPR </option>
+                                                    <option>NRIC (Old)</option>
+                                                    <option>MyTentera</option>
+                                                    <option>MyKad</option>
+                                                  </select>
+                                                <input type="text" id="idnum" placeholder="Identification Number" class="form-control shadow-sm text-center" aria-describedby="" style="border-radius: 0px 7px 7px 0px;" value="7624-5655-9859">
+                                        </div>
+                                    </form>
+                                </div>
+
+
+
+
+
+                                <!-- Amount and purpose for Financing application -->
+                                <div class="container pb-5 pt-5 mb-5 mt-4" id="Financing_show" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                    <h4 class="pb-5" style="text-align: center;">Amount and Purpose of Financing Application</h4> <br>
+                                    <form class="row g-3 mx-2" id="formdetails">
+                                        
+                                        
+                                        <div class="col-3">
+                                            <label for="amt_and_purp111" class="col-form-label">Amount: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="tenure" class="col-form-label">Tenure: </label>
+                                        </div>
+                                        <div class="col-3" style="display: flex;">
+                                            <input type="text" id="tenure" placeholder="Tenure" style="border-radius: 7px -7px -7px 7px ; border: 1px solid #cfcfcf" class="form-control shadow-sm text-center" aria-describedby="" value="" >
+                                            <span class="input-group-text" style="border-radius: 0px 7px 7px 0px ; border: 1px solid #cfcfcf">Months</span>
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="appintrate" class="col-form-label">Applicable Profit Rate: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="appintrate" placeholder="Applicable rate of Profit" class="form-control shadow-sm text-center" aria-describedby="" value="2%" disabled>
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="purpofFinancing" class="col-form-label">Purpose of Financing Application: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="purpofFinancing" placeholder="Purpose of Financing Application" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Financing taken from different Organization -->
+                                <div class="container pb-5 pt-5 mb-5 mt-4" id="Financing_show" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                    <h4 class="pb-5" style="text-align: center;">Financing taken from other organizations</h4> <br>
+                                    <form class="row g-3 mx-2" id="formdetails">
+                                        
+                                        <div class="col-3">
+                                            <label for="amt_and_purp112" class="col-form-label">Amount: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="amt_and_purp112" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="purpose1" class="col-form-label">Purpose: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="purpose1" placeholder="Purpose" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="nameoforg" class="col-form-label">Name of Organization: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="nameoforg" placeholder="Name of Organization" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                                <!-- Attachments -->
+
+
+                                <div class="container pb-9 pt-5 mb-5 mt-5" id="attachments" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px; ">
+                                    <div class="container">
+                                    <h4 class="pb-5" style="text-align: center;">Attachments</h4> 
+                                    <br>
+                                    <div class="container overflow-auto">
+                                        <table class="table table-responsive table-bordered table-hover text-center ms "  id="tbl_exporttable_to_xls"
+                                        style="color: rgb(0, 0, 0); overflow: scroll; ">
+                                        <thead>
+                                            <tr class="sticky-top" style="z-index: 1; font-weight: bold; background-color: #18A0FB; color: rgb(255, 255, 255);">
+                                                <th> # </th>
+                                                <th><b>Document Name </b></th>
+                                                <th><b>Upload File </b></th>
+                                                <th><b>Preview File </b></th>
+                                                <th><b>Status</b></th>
+                                                <th><b>Uploaded Date </b></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="background-color: whitesmoke;" id="searchtable">
+                                        <tr>
+                                                <td> 1 </td>
+                                                <td> Ctos Credit Report </td>
+                                                <td> 
+                                                    <div class="container" style="display:inline">    
+                                                        <input type="file" id="ctosupload" onclick="ctos_upload1();">
+                                                        <label for="ctosupload" >
+                                                            &nbsp;
+                                                            <i style="font-size: large;" class="bi bi-upload"></i>&nbsp;
+                                                            <figcaption style="display: inline;" id="ctosfile"></figcaption>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td><a class="disabledbutton px-4 pb-2 pt-2" target="_blank" id="previewlink_P1"><i id="prev_eye_P1" class="fa-solid fa-eye-slash"></i></a></td>
+                                                <td style="background-color: #ffb84e;" id="ctosuploaded"> Pending </td>
+                                                <td> 2 Nov 22, 10:00 </td>
+                                        </tr>
+                                        <tr class="table-light">
+                                                <td> 2 </td>
+                                                <td> SSM Registration Doc </td>
+                                                <td> 
+                                                    <div class="container" style="display:inline">    
+                                                        <input type="file" id="ssmregdocupload" onclick="ssmregdoc_upload2();">
+                                                        <label for="ssmregdocupload" >
+                                                            &nbsp;
+                                                            <i style="font-size: large;" class="bi bi-upload"> </i>&nbsp;
+                                                            <figcaption style="display: inline;" id="ssmregdocfile"></figcaption>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td><a class="disabledbutton px-4 pb-2 pt-2" target="_blank" id="previewlink_P2"><i id="prev_eye_P2" class="fa-solid fa-eye-slash"></i></a></td>
+                                                <td style="background-color: #ffb84e;" id="ssmuploaded"> Pending </td>
+                                                <td> 2 Nov 22, 11:30 </td>
+                                        </tr>
+                                        <tr>
+                                                <td> 3 </td>
+                                                <td> Director Identification Doc </td>
+                                                <td> 
+                                                    <div class="container" style="display:inline">    
+                                                        <input type="file" id="dirIDdocupload" onclick="dirIDdoc_upload3();">
+                                                        <label for="dirIDdocupload" >
+                                                            &nbsp;
+                                                            <i style="font-size: large;" class="bi bi-upload"> </i>&nbsp;
+                                                            <figcaption style="display: inline;" id="dirIDdocfile"></figcaption>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td><a class="disabledbutton px-4 pb-2 pt-2" target="_blank" id="previewlink_P3"><i id="prev_eye_P3" class="fa-solid fa-eye-slash"></i></a></td>
+                                                <td style="background-color: #ffb84e;" id="didocuploaded"> Pending </td>
+                                                <td> 2 Nov 22, 11:50 </td>
+                                        </tr>
+                                        <tr class="table-light">
+                                                <td> 4 </td>
+                                                <td> Bank Statement (3 Months) </td>
+                                                <td> 
+                                                    <div class="container" style="display:inline">    
+                                                        <input type="file" id="bankstateupload" onclick="bankstate_upload4();">
+                                                        <label for="bankstateupload" >
+                                                            &nbsp;
+                                                            <i style="font-size: large;" class="bi bi-upload"> </i>&nbsp;
+                                                            <figcaption style="display: inline;" id="bankstatefile"></figcaption>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td><a class="disabledbutton px-4 pb-2 pt-2" target="_blank" id="previewlink_P4"><i id="prev_eye_P4" class="fa-solid fa-eye-slash"></i></a></td>
+                                                <td style="background-color: #ffb84e;" id="bankstateuploaded"> Pending </td>
+                                                <td> 2 Nov 22, 12:00 </td>
+                                        </tr>
+                                        <tr>
+                                                <td> 5 </td>
+                                                <td> Picture Of Business Premises </td>
+                                                <td> 
+                                                    <div class="container" style="display:inline">    
+                                                        <input type="file" id="picofBusinesspremupload" onclick="picofBusinessprem_upload5();">
+                                                        <label for="picofBusinesspremupload" >
+                                                            &nbsp;
+                                                            <i style="font-size: large;" class="bi bi-upload"> </i>&nbsp;
+                                                            <figcaption style="display: inline;" id="picofBusinesspremfile"></figcaption>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td><a class="disabledbutton px-4 pb-2 pt-2" target="_blank" id="previewlink_P5"><i id="prev_eye_P5" class="fa-solid fa-eye-slash"></i></a></td>
+                                                <td style="background-color: #ffb84e;" id="picofbuspremuploaded"> Pending </td>
+                                                <td> 2 Nov 22, 13:10 </td>
+                                        </tr>
+                                        <tr class="table-light">
+                                                <td> 6 </td>
+                                                <td> Picture Of Passport </td>
+                                                <td> 
+                                                    <div class="container" style="display:inline">    
+                                                        <input type="file" id="picofPPupload" onclick="picofPP_upload6();">
+                                                        <label for="picofPPupload" >
+                                                            &nbsp;
+                                                            <i style="font-size: large;" class="bi bi-upload"> </i>&nbsp;
+                                                            <figcaption style="display: inline;" id="picofPPfile"></figcaption>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td><a class="disabledbutton px-4 pb-2 pt-2" target="_blank" id="previewlink_P6"><i id="prev_eye_P6" class="fa-solid fa-eye-slash"></i></a></td>
+                                                <td style="background-color: #ffb84e;" id="pipassuploaded"> Pending </td>
+                                                <td> 2 Nov 22, 13:50 </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </div>
+                                </div>
+                                <!-- If Personal Financing was selected -->
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button class="btn btn-primary" id="no-next" type="button" onclick="showpage(2); myFunction(1)" style=" width: 115px; ">NEXT</button>
+                                </div>
+                                <!-- If Corporate Financing was selected -->
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button class="btn btn-primary" id="no-next1" type="button" onclick="showpage(2); myFunction(2)" style=" width: 115px; ">NEXT</button>
+                                </div>
+                            </div>
+
+
+
+
+<!-- Personal & Corporate Information Process END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- References Information Process  START-->
+    <!-- Registration Page 2 -->
+
+                                <div id="referenceinfo" style="display: none;">
+                            
+
+                                        <!-- References Information -->
+
+                                       <div class="container pb-6 pt-5 mb-5 mt-5" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                            <h4 class="pb-5" style="text-align: center;">References Information</h4><br>
+                                            <form class="row g-3 pb-5 mx-2" id="formdetails">
+                                                
+                                                <h5>Reference 1</h5>
+
+                                                <div class="col-3">
+                                                    <label for="name" class="col-form-label">Name: </label>
+                                                </div>
+                                                <div class="col-3 ">
+                                                    <input type="text" id="tname" placeholder="Name" class="form-control shadow-sm text-center" aria-describedby="" value="Jane Doe">
+                                                </div>
+    
+                                                <div class="col-3">
+                                                    <label for="mobnumref1" class="col-form-label">Mobile Number: </label>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="tel" id="mobnumref1" placeholder="Mobile Number" class="form-control shadow-sm text-center px-6" aria-describedby="" value="+60">
+                                                </div>
+    
+                                                <div class="col-3">
+                                                    <label for="mykad#" class="col-form-label">Identification Number: </label>
+                                                </div>
+                                                <div class="col-3" style="display: flex;">
+                                                    <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                                        <option selected>MyPR </option>
+                                                        <option>NRIC (Old)</option>
+                                                        <option>MyTentera</option>
+                                                        <option>MyKad</option>
+                                                      </select>
+                                                    <input type="text" id="mykad#" placeholder="MyKad" class="form-control shadow-sm text-center" style="border-radius: 0px 7px 7px 0px;" aria-describedby="" value="888595-59-563516">
+                                                </div>
+    
+                                                <div class="col-3">
+                                                    <label for="relationship" class="col-form-label">Relationship: </label>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="text" id="relationship" placeholder="Relationship" class="form-control shadow-sm text-center" aria-describedby="" value="Partner">
+                                                </div>
+                                                <!-- Registration ID removed [commented for future] -->
+                                                <!-- <div class="col-3">
+                                                    <label for="Reg" class="col-form-label">Registration ID: </label>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="text" id="Reg" placeholder="RegistrationID" class="form-control shadow-sm text-center" aria-describedby="" value="696565-F">
+                                                </div> -->
+
+                                                <div class="col-3">
+                                                    <label for="occupposition" class="col-form-label">Occupation / Position: </label>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="text" id="occupposition" placeholder="Occupation" class="form-control shadow-sm text-center" aria-describedby="" value="Teacher">
+                                                </div>
+                                                <!-- Gap Gen START-->
+                                                <div class="col-6">
+                                                </div>
+                                                <!-- Gap Gen END-->
+
+                                                <div class="col-4 pb-3">
+                                                    <label for="reg_res_add8" class="col-form-label">Add Address: </label>
+                                                    <i style="font-size: large; vertical-align: middle;" class="bi bi-plus-circle-fill hovermode" onclick="addBox3()"></i>
+                                                    <div id="add3"></div>
+                                                </div>
+                                                
+    
+                                                
+
+                                                <!--Row-->
+                                            <div class="row justify-content-end pb-7">
+                                                <div class="col-3">
+                                                    <div class="input-group flex-nowrap" style="z-index: 1;">
+                                                        <span class="input-group-text" style="margin-top: 50px; " id="addon-wrapping1"> <i style="font-size: large; vertical-align: middle;" class="bi bi-pen-fill"></i>
+                                                            
+                                                        </span>
+                                                
+                                                        <input type="text" class="form-control text-center" data-bs-toggle="modal" data-bs-target="#signatureModal1" placeholder="Signature" aria-label="Signature" aria-describedby="addon-wrapping" disabled>
+                                            
+                                                      </div>
+                                                </div>
+                                                  
+                                                 <div class="col-3">
+                                                    <div class="input-group flex-nowrap" style="z-index: 1;">
+                                                        <span class="input-group-text" style="margin-top: 50px;"  id="refwrap1">  <i style="font-size: large; vertical-align: middle;" class="bi bi-calendar-week-fill"></i>
+                                                        </span>
+                                                        <input type="date" id="Refe_Info1" class="form-control text-center" onchange="dated(1)" placeholder=" &nbsp; dd/mm/yy" aria-label="dd/mm/yy" aria-describedby="addon-wrapping" >
+                                                      </div>
+                                                 </div>
+                                                </div>
+                                                <br>
+                                                <br>
+
+                                                <hr class="border border-primary border-1 opacity-200 " >
+                                                <br>
+                                                <br>
+                                                
+
+                                                <h5>Reference 2</h5>
+
+                                                <div class="col-3">
+                                                    <label for="name" class="col-form-label">Name: </label>
+                                                </div>
+                                                <div class="col-3 ">
+                                                    <input type="text" id="tname2" placeholder="Name" class="form-control shadow-sm text-center" aria-describedby="" value="David Smith">
+                                                </div>
+        
+                                                <div class="col-3">
+                                                    <label for="mobnumref2" class="col-form-label">Mobile Number: </label>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="tel" id="mobnumref2" placeholder="Mobile Number" class="form-control shadow-sm text-center px-6" aria-describedby="" value="+60">
+                                                </div>
+        
+                                                <div class="col-3">
+                                                    <label for="mykad#" class="col-form-label">Identification Number: </label>
+                                                </div>
+                                                <div class="col-3" style="display: flex;">
+                                                    <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                                        <option selected>MyPR </option>
+                                                        <option>NRIC (Old)</option>
+                                                        <option>MyTentera</option>
+                                                        <option>MyKad</option>
+                                                      </select>
+                                                    <input type="text" id="mykad#2" placeholder="MyKad" class="form-control shadow-sm text-center" aria-describedby="" style="border-radius: 0px 7px 7px 0px;" value="4848477-56-5652">
+                                                </div>
+        
+                                                <div class="col-3">
+                                                    <label for="relationship" class="col-form-label">Relationship: </label>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="text" id="relationship2" placeholder="Relationship" class="form-control shadow-sm text-center" aria-describedby="" value="Father">
+                                                </div>
+                                                <!-- Registration ID removed [commented for future] -->
+                                                <!-- <div class="col-3">
+                                                    <label for="Reg" class="col-form-label">Registration ID: </label>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="text" id="Reg2" placeholder="RegistrationID" class="form-control shadow-sm text-center" aria-describedby="" value="526658-K">
+                                                </div> -->
+
+                                                <div class="col-3">
+                                                    <label for="occupposition" class="col-form-label">Occupation / Position: </label>
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="text" id="occupposition2" placeholder="Occupation" class="form-control shadow-sm text-center" aria-describedby="" value="Engineer">
+                                                </div>
+
+                                                <!-- Gap Gen START -->
+                                                <div class="col-6">
+                                                </div>
+                                                <!-- Gan Gen END -->
+                                                <div class="col-4 pb-3">
+                                                    <label for="reg_res_add7" class="col-form-label">Add Address: </label>
+                                                    <i style="font-size: large; vertical-align: middle;" class="bi bi-plus-circle-fill hovermode" onclick="addBox4()"></i>
+                                                    <div id="add4"></div>
+                                                </div>
+                                                
+                                                
+        
+                                                <!--box-->
+        
+                                                <div class="row justify-content-end">
+                                                    <div class="col-3">
+                                                        <div class="input-group flex-nowrap" style="z-index: 1;" onclick="signature()">
+                                                            <span class="input-group-text" style="margin-top: 50px;" id="addon-wrapping2"> <i style="font-size: large; vertical-align: middle;" class="bi bi-pen-fill"></i>
+                                                                
+                                                            </span>
+                                                    
+                                                            <input type="text" class="form-control text-center" data-bs-toggle="modal" data-bs-target="#signatureModal2" placeholder="Signature" aria-label="Signature" aria-describedby="addon-wrapping" disabled>
+                                                
+                                                          </div>
+                                                    </div>
+                                                      
+                                                     <div class="col-3">
+                                                        <div class="input-group flex-nowrap" style="z-index: 1;">
+                                                            <span class="input-group-text" style="margin-top: 50px;" id="refwrap2">  <i style="font-size: large; vertical-align: middle;" class="bi bi-calendar-week-fill"></i>
+                                                            </span>
+                                                            <input type="date" id="Refe_Info2" class="form-control text-center" onchange="dated(2)" placeholder=" &nbsp; dd/mm/yy" aria-label="dd/mm/yy" aria-describedby="addon-wrapping" >
+                                                          </div>
+                                                     </div>
+                                                    </div>
+                                            </form>
+                                        </div> 
+                                <div>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                        <button class="btn btn-primary me-md-2" type="button" onclick="showpage(1); " style="display:block; width: 115px; ">BACK</button>
+                                        <button class="btn btn-primary" type="button" onclick="showpage(3); " style="display:block; width: 115px; ">NEXT</button>
+                                        
+                                    </div>
+                                </div>
+                                </div>
+                                    
+                                
+                                
+                                
+    <!-- References Information Process END -->
+
+
+
+
+
+
+    <!-- Financing Application Summary & Declaration Process START -->
+    <!-- Registration Page 3 -->
+
+
+                                <div id="Financingapplication_SandD" style="display: none;">
+                                    
+                                        <div class="container pb-7 pt-5 mb-5 mt-5" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                            <h4 class=" pb-5" style="text-align: center;">Financing Application Summary & Declaration</h4> <br>
+                                            <p class="mx-5" style="text-align: justify; font-weight: 500;">
+                                                Adalah Dengan ini Saya Mengesahkan Bahawa <br>
+
+                                                Saya <input type="text" id="fname1" value="John Doe" placeholder="nama" style="text-align: center;"> No. My Kad <input type="text" id="fname2" value="762233-82-123322" placeholder="MyKad Number" style="text-align: center;">. <br><br>
+                                                i) Dengan ini saya mengakui bahawa, sekiranya saya memberikan atau menggunakan apa-apa
+                                                dokumen yang mengandungi maklumat atau butiran yang palsu dan silap dengan niat untuk memperdayakan bagi kepentingan dan keuntungan peribadi saya boleh didakwa di
+                                                bawah Seksyen 18 Akta Suruhanjaya Pencegahan Rasuah Malaysia 2009 yang mana
+                                                disabitkan oleh Mahkamah saya boleh dikenakan hukuman penjara selama tempoh tidak
+                                                melebihi 20 tahun dan denda lima (5) kali suapan / nilai pemalsuan atau RM10,000.00
+                                                mengikut mana-mana lebih tinggi dan <br><br>
+
+                                                ii) Sekiranya saya menipu atau menggunakan apa-apa dokumen dengan niat menipu, saya
+                                                boleh didakwa di bawah Seksyen 420 dan 468 Kanun Keseksaan yang mana jika disabitkan,
+                                                saya boleh dikenakan hukuman penjara selama tempoh (7) tahun dan denda (Seksyen 468). <br><br>
+
+                                                iii) Segala maklumat dan keterangan yang diberikan adalah benar. <br><br>
+
+                                                iv) Saya memberikan kebenaran kepada Hijrah Selangor untuk mengsahkan
+                                                maklumat mengenai diri saya seperti menyemak pinjaman sedia ada dengan mana-mana
+                                                pihak yang berkaitan. <br><br>
+
+                                                v) Pihak Hijrah Selangor berhak menolak permohonan ini jika didapati butir
+                                                yang diberikan tidak benar. <br><br>
+
+                                                vi) Sekiranya saya gagal membayar balik pinjaman pihak Hijrah Selangor berhak mengambil tindakan yang
+                                                bersesuaian termasuk tindakan undang-undang. <br><br>
+                                            </p>
+                                            <div class="row justify-content-end" style=" margin-right: 40px; ">
+                                                <div class="col-3">
+                                                    <div class="input-group flex-nowrap" style="z-index: 1;">
+                                                        <span class="input-group-text" style="margin-top: 50px;" id="addon-wrapping3"> <i style="font-size: large; vertical-align: middle;" class="bi bi-pen-fill"></i>
+                                                            
+                                                        </span>
+                                                
+                                                        <input type="text" class="form-control text-center" data-bs-toggle="modal" data-bs-target="#signatureModal" placeholder="Signature" aria-label="Signature" aria-describedby="addon-wrapping" disabled>
+                                            
+                                                      </div>
+                                                </div>
+                                                  
+                                                 <div class="col-3">
+                                                    <div class="input-group flex-nowrap" style="z-index: 1;">
+                                                        <span class="input-group-text" style="margin-top: 50px;" id="refwrap3">  <i style="font-size: large; vertical-align: middle;" class="bi bi-calendar-week-fill"></i>
+                                                        </span>
+                                                        <input type="date" id="Refe_Info2" class="form-control text-center" onchange="dated(3)" placeholder=" &nbsp; dd/mm/yy" aria-label="dd/mm/yy" aria-describedby="addon-wrapping" >
+                                                      </div>
+                                                 </div>
+                                                </div>
+                                        </div>
+                                    
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                        <button class="btn btn-primary me-md-2" type="button" onclick="showpage(2); " style=" display:block; width: 115px; ">BACK</button>
+                                        <button class="btn btn-primary" type="button" onclick="showpage(4);" style="display:block; width: 115px; ">NEXT</button>
+
+                                    </div>
+                                </div>
+
+    <!-- Financing Application Summary & Declaration Process END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Business Operation Analysis & Submission Process START -->
+    <!-- Registration Page 4 -->
+
+
+                        <div id="Businessop" style="display: none;">
+                        
+                                <div class="container pb-7 pt-5 mb-5 mt-5" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                    <h4 class="pb-5" style="text-align: center;">Business Operation Analysis</h4> <br>
+                                    <form class="row g-3 mx-2 mb-3" id="formdetails">
+                                        
+                                        
+                                        <div class="col-3">
+                                            <label for="inception_cap" class="col-form-label">Paid-up Capital an inception: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="number" id="inception_cap" placeholder="Paid-up Capital an inception" class="form-control shadow-sm text-center" aria-describedby="" value="100000">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="yearsofexp" class="col-form-label"> Years of Business Experince: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="yearsofexp" placeholder="Years of Business Experince" class="form-control shadow-sm text-center" aria-describedby="" value="5 years">
+                                        </div>
+
+                                        <!-- Spacing for colomn -->
+                                        <div class="col-6">
+                                            <label for="year1" class="col-form-label">Year 1 of Business</label>
+                                        </div>
+                                        <!-- Spacing for colomn -->
+
+                                        <div class="col-6">
+                                            <label for="top3training" class="col-form-label">Top 3 Trainings attended: </label>
+                                        </div>
+
+
+                                        <div class="col-3">
+                                            <label for="totalrev" class="col-form-label">Total Revenue: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="totalrev" placeholder="Total Revenue (RM)" class="form-control shadow-sm text-center" aria-describedby="" value="60000">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="training1" class="col-form-label">Training 1: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="training1" placeholder="Training 1" class="form-control shadow-sm text-center" aria-describedby="" value="MDEC">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="gross_profit" class="col-form-label">Gross Profit: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="gross_profit" placeholder="Gross Profit (RM)" class="form-control shadow-sm text-center" aria-describedby="" value="45000">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="training2" class="col-form-label">Training 2: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="training2" placeholder="Training 2" class="form-control shadow-sm text-center" aria-describedby="" value="-"> 
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="Value_of_Assets" class="col-form-label">Value of Assets: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="Value_of_Assets" placeholder="Value of Assets (RM)" class="form-control shadow-sm text-center" aria-describedby="" value="150000">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="training3" class="col-form-label">Training 3: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="training3" placeholder="Training 3" class="form-control shadow-sm text-center" aria-describedby="" value="-">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="totaldebt" class="col-form-label"> Total Debt: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="totaldebt" placeholder="Total Debt (RM)" class="form-control shadow-sm text-center" aria-describedby="" value="30000">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="Pro_Qualify" class="col-form-label">Professional Qualification: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="Pro_Qualify" placeholder="Professional Qualification" class="form-control shadow-sm text-center" aria-describedby="" value="CFA">
+                                        </div>
+
+                                        <div class="col-12" style="margin-bottom: 50px;">
+                                        </div>
+                                        
+                                        <!-- Second year of business -->
+
+                                        <!-- Spacing for colomn -->
+                                        <div class="col-6">
+                                            <label for="year2" class="col-form-label">Year 2 of Business:</label>
+                                        </div>
+                                        <!-- Spacing for colomn -->
+
+                                        <div class="col-3">
+                                            <label for="grossprofit" class="col-form-label">Gross Profit: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="grossprofit2" placeholder="Gross Profit (RM)" class="form-control shadow-sm text-center" aria-describedby="" value="75000">
+                                        </div>
+
+
+                                        <div class="col-3">
+                                            <label for="totalrev" class="col-form-label">Total Revenue: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="totalrev2" placeholder="Total Revenue (RM)" class="form-control shadow-sm text-center" aria-describedby="" value="70000">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="Value_of_Assets" class="col-form-label">Value of Assets: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="Value_of_Assets2" placeholder="Value of Assets (RM)" class="form-control shadow-sm text-center" aria-describedby="" value="200000">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="marketmethod" class="col-form-label">Marketing Method: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="marketmethod2" placeholder="Training 3" class="form-control shadow-sm text-center" aria-describedby="" value="Online Advert">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="totaldebt" class="col-form-label"> Total Debt: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="totaldebt2" placeholder="Total Debt (RM)" class="form-control shadow-sm text-center" aria-describedby="" value="50000">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="businessinfra" class="col-form-label">Business Infrastructure: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="businessinfra2" placeholder="Business Infrastructure:" class="form-control shadow-sm text-center" aria-describedby="" value="-">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="custservice" class="col-form-label">Customer Service: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="custservice2" placeholder="Customer Service" class="form-control shadow-sm text-center" aria-describedby="" value="No">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="manufacmethod" class="col-form-label">Manufacturing Method: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="manufacmethod2" placeholder="Manufacturing Method" class="form-control shadow-sm text-center" aria-describedby="" value="Semi-Automated">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="accsoft_used" class="col-form-label">Accounting Software Used: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="accsoft_used2" placeholder="Accounting Software Used" class="form-control shadow-sm text-center" aria-describedby="" value="Zero">
+                                        </div>
+
+                                        
+
+                                    </form>
+                                </div>
+
+                                <div class="container pb-7 pt-5 mb-5 mt-5" style="background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                                    <h4 class="pb-5" style="text-align: center;"> Business Management </h4> <br>
+                                    <form class="row g-3 mx-2 mb-3" id="formdetails">
+                                        
+                                        <!-- Dropdown function needs to be enabled -->
+                                        <div class="col-3">
+                                            <label for="businessstruct" class="col-form-label">Business Structure: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="text" id="businessstruct" placeholder="Business Structure" class="form-control shadow-sm text-center" aria-describedby="" value="Sdn Bhd">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="businessplanstrats" class="col-form-label"> Strategic Business Planning: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="businessplanstrats" placeholder="Strategic Business Planning" class="form-control shadow-sm text-center" aria-describedby="" value="-">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="workforce_manage" class="col-form-label">Workforce Managment: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="workforce_manage" placeholder="Workforce Management" class="form-control shadow-sm text-center" aria-describedby="" value="-">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="ict_usage" class="col-form-label">ICT Usage: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="ict_usage" placeholder="ICT Usage" class="form-control shadow-sm text-center" aria-describedby="" value="Low">
+                                        </div>
+                                    </form>
+                                </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <!-- Last page for customer to return to first page or submit the documentation i.e. page 5-->
+                                <button class="btn btn-primary me-md-2" type="button" onclick="showpage(3); " style="display:block; width: 115px; ">BACK</button>
+                                <button class="btn btn-primary" type="button" onclick="showpage(5); myFunction2();" style="display:block; width: 115px; ">NEXT</button>
+                                
+                                
+                            </div>
+                    
+                    </div>
+
+
+
+
+
+
+<!-- Application Approval Process END -->
+
+<!-- Preview Process START -->
+
+            <div id="endpage" style="display: none;">
+                       
+                            <!-- Personal Info Preview -->
+                <div class="container pt-5 pb-5 mb-5" style="background-color: rgba(154, 158, 167, 0.15); border-radius: 7px;">
+                <div class="container mb-5">
+                <fieldset disabled>
+                                <h3 class="text-center">Preview Page</h3>
+                                <hr class="border border-secondary border-5 opacity-200">
+                                <br>
+                                <br>
+                                <div class="container" id="individual2">
+                                    <h4 class="pb-5" style="text-align: center;">Personal Information</h4> <br>
+                                    <form class="row g-3 mx-2" id="formdetails">
+                                        
+                                        
+                                        <div class="col-3">
+                                            <label for="firstname1" class="col-form-label">First Name: </label>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <input type="text" id="firstname1" placeholder="First Name" class="form-control shadow-sm text-center" aria-describedby="" value="John">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="lastname1" class="col-form-label">Last Name: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="lastname1" placeholder="Last Name" class="form-control shadow-sm text-center" aria-describedby="" value="Doe">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="email1" class="col-form-label">Email Address: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="email" id="email1" placeholder="Email Address" class="form-control shadow-sm text-center" aria-describedby="" value="johndoe32@gmail.com">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="compregno1" class="col-form-label">Company Registration Number: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="compregno1" placeholder="Company Registration Number" class="form-control shadow-sm text-center" aria-describedby="" value="223344-K">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="mobnum1" class="col-form-label">Mobile Number: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="tel" id="mobnum1" placeholder="Mobile Number" class="form-control shadow-sm text-center px-6" aria-describedby="" value="+60">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="idnum1" class="col-form-label">Identification Number: </label>
+                                        </div>
+                                        <div class="col-3" style="display: flex;">
+                                            <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                                <option selected>MyPR </option>
+                                                <option>NRIC (Old)</option>
+                                                <option>MyTentera</option>
+                                              </select>
+                                            <input type="text" id="idnum1" placeholder="Identification Number" class="form-control shadow-sm text-center" aria-describedby="" style="border-radius: 0px 7px 7px 0px;" value="7624-5655-9859">
+                                    </div>
+
+                                        <div class="col-3">
+                                            <label for="gender1" class="col-form-label">Gender: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="gender1" placeholder="Gender" class="form-control shadow-sm text-center" aria-describedby="" value="Male">
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="mstatus1" class="col-form-label">Marital Status: </label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" id="mstatus1" placeholder="Marital Status" class="form-control shadow-sm text-center" aria-describedby="" value="Single">
+                                        </div>
+
+                                        <div class="col-4 pb-3">
+                                            <label for="reg_res_add6" class="col-form-label">Registered Address: </label>
+                                        </div>                                        
+                                    </form>
+                                </div>
+                            
+
+                                <div class="container" id="corporate2">
+                                <h4 class="pb-5" style="text-align: center;">Corporate Information</h4> <br>
+                                <form class="row g-3 mx-2" id="formdetails">
+                                    
+                                    
+                                    <div class="col-3">
+                                        <label for="Companyname1" class="col-form-label">Company Name: </label>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <input type="text" id="companyname1" placeholder="Company Name" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="regid1" class="col-form-label">Registration ID: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="regid1" placeholder="Registration ID" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="regstate1" class="col-form-label">Registration State: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="regstate1" placeholder="Registration State" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                            <label for="comp_regdate" class="col-form-label">Company Registration Date: </label>
+                                        </div>
+                                        <div class="col-3" style="display: flex;">
+                                                <span class="input-group-text"  id="refwrap51" style="border-radius: 7px 0px 0px 7px;">  <i style="font-size: large; vertical-align: middle;" class="bi bi-calendar-week-fill"></i>
+                                                    <input type="date" id="comp_regdate" style=" border-radius: 0px 0px 0px 0px;" class="text-center" onchange="dated(5)" placeholder=" &nbsp; dd/mm/yy" aria-label="dd/mm/yy" >
+                                                </span>
+                                         </div>
+                                    <div class="col-3">
+                                        <label for="mobnum2" class="col-form-label">Mobile Number: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="tel" id="mobnum2" placeholder="Mobile Number" class="form-control shadow-sm text-center px-6" aria-describedby="" value="+60">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="nature_of_bus1" class="col-form-label">Nature of Business: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="nature_of_bus1" placeholder="Nature of Business" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+                                </form>
+                            </div>
+                            <br>
+                            <br>
+                            <hr class="border border-secondary border-2 opacity-200">
+                            <br>
+                            <br>
+                            <!-- Amount and purpose for Financing application -->
+                            <div class="container pb-5 pt-5 mb-5 mt-4" id="Financing_show" style="background-color: rgba(154, 158, 167, 0.15); border-radius: 7px;">
+                                <h4 class="pb-5" style="text-align: center;">Amount and Purpose of Financing Application</h4> <br>
+                                <form class="row g-3 mx-2" id="formdetails">
+                                    
+                                    
+                                    <div class="col-3">
+                                        <label for="amt_and_purp111" class="col-form-label">Amount: </label>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <input type="number" id="amt_and_purp111" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="tenure" class="col-form-label">Tenure: </label>
+                                    </div>
+                                    <div class="col-3" style="display: flex;">
+                                        <input type="text" id="tenure" placeholder="Tenure" style="border-radius: 7px -7px -7px 7px ; border: 1px solid #cfcfcf" class="form-control shadow-sm text-center" aria-describedby="" value="" >
+                                        <span class="input-group-text" style="border-radius: 0px 7px 7px 0px ; border: 1px solid #cfcfcf">Months</span>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="appintrate" class="col-form-label">Applicable Profit Rate: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="appintrate" placeholder="Applicable rate of Profit" class="form-control shadow-sm text-center" aria-describedby="" value="2%" disabled>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="purpofFinancing" class="col-form-label">Purpose of Financing Application: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="purpofFinancing" placeholder="Purpose of Financing Application" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                    </div>
+                                </form>
+                            </div>
+                            <br>
+                            <br>
+                            <hr class="border border-secondary border-2 opacity-200">
+                            <br>
+                            <br>
+                            <!-- Financing taken from different Organization -->
+                            <div class="container pb-5 pt-5 mb-5 mt-4" id="Financing_show" style="background-color: rgba(154, 158, 167, 0.15); border-radius: 7px;">
+                                <h4 class="pb-5" style="text-align: center;">Financing taken from other organizations</h4> <br>
+                                <form class="row g-3 mx-2" id="formdetails">
+                                    
+                                    <div class="col-3">
+                                        <label for="amt_and_purp112" class="col-form-label">Amount: </label>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <input type="number" id="amt_and_purp112" placeholder="Amount" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="purpose1" class="col-form-label">Purpose: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="purpose1" placeholder="Purpose" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="nameoforg" class="col-form-label">Name of Organization: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="nameoforg" placeholder="Name of Organization" class="form-control shadow-sm text-center" aria-describedby="" value="">
+                                    </div>
+                                </form>
+                            </div>
+                            <br>
+                            <br>
+                            <hr class="border border-secondary border-2 opacity-200">
+                            <br>
+                            <br>
+                            <!-- Reference Info Preview -->
+
+                            <div class="container">
+                                <h4 class="pb-5" style="text-align: center;">References Information</h4><br>
+                                <form class="row g-3 pb-5 mx-2" id="formdetails">
+                                    
+                                    <h5>Reference 1</h5>
+
+                                    <div class="col-3">
+                                        <label for="name1" class="col-form-label">Name: </label>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <input type="text" id="tname1" placeholder="Name" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="mobnumref11" class="col-form-label">Mobile Number: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="mobnumref11" placeholder="Mobile Number#" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="mykad#1" class="col-form-label">Identification Number </label>
+                                    </div>
+                                    <div class="col-3" style="display: flex;">
+                                        <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                            <option selected>MyPR </option>
+                                            <option>NRIC (Old)</option>
+                                            <option>MyTentera</option>
+                                            <option>MyKad</option>
+                                          </select>
+                                        <input type="text" id="mykad#1" placeholder="MyKad" class="form-control shadow-sm text-center" aria-describedby="" style="border-radius: 0px 7px 7px 0px;" value="4848477-56-5652">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="relationship1" class="col-form-label">Relationship: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="relationship1" placeholder="Relationship" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="Reg1" class="col-form-label">Registration ID: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="Reg1" placeholder="RegistrationID" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="occupposition1" class="col-form-label">Occupation / Position: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="occupposition1" placeholder="Occupation" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-4 pb-3">
+                                        <label for="reg_res_ad" class="col-form-label">Address: </label>
+                                    </div>
+                                    
+
+
+
+                                    <!--Row-->
+                                <div class="row justify-content-end pb-7">
+                                    <div class="col-3">
+                                        <div class="input-group flex-nowrap" style="z-index: 1;">
+                                            <span class="input-group-text" style="margin-top: 50px;" id="addon-wrapping11"> <i style="font-size: large; vertical-align: middle;" class="bi bi-pen-fill"></i>
+                                                
+                                            </span>
+                                    
+                                            <input type="text" class="form-control text-center" placeholder="Signature" aria-label="Signature" aria-describedby="addon-wrapping" >
+                                
+                                          </div>
+                                    </div>
+                                      
+                                     <div class="col-3">
+                                        <div class="input-group flex-nowrap" style="z-index: 1;">
+                                            <span class="input-group-text" style="margin-top: 50px;" id="refwrap11">  <i style="font-size: large; vertical-align: middle;" class="bi bi-calendar-week-fill"></i>
+                                            </span>
+                                            <input type="date" id="Refe_Info11" class="form-control text-center"  placeholder=" &nbsp; dd/mm/yy" aria-label="dd/mm/yy" aria-describedby="addon-wrapping" >
+                                          </div>
+                                     </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <hr class="border border-primary border-1 opacity-200 " >
+                                    <br>
+                                    <br>
+                                    
+
+                                    <h5>Reference 2</h5>
+
+                                    <div class="col-3">
+                                        <label for="name" class="col-form-label">Name: </label>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <input type="text" id="tname21" placeholder="Name" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="mobnumref21" class="col-form-label">Mobile Number: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="mobnumref21" placeholder="Mobile Number#" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="mykad#21" class="col-form-label">Identification Number: </label>
+                                    </div>
+                                    <div class="col-3" style="display: flex;">
+                                        <select class="input-group-prepend shadow-sm text-center" style="border:solid 1px #c7c7c7; border-radius: 7px 0px 0px 7px; font-size: 14px;">
+                                            <option selected>MyPR </option>
+                                            <option>NRIC (Old)</option>
+                                            <option>MyTentera</option>
+                                            <option>MyKad</option>
+                                          </select>
+                                        <input type="text" id="mykad#21" placeholder="MyKad" class="form-control shadow-sm text-center" aria-describedby="" style="border-radius: 0px 7px 7px 0px;" value="4848477-56-5652">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="relationship" class="col-form-label">Relationship: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="relationship21" placeholder="Relationship" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="Reg" class="col-form-label">Registration ID: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="Reg21" placeholder="RegistrationID" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="occupposition" class="col-form-label">Occupation / Position: </label>
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="text" id="occupposition21" placeholder="Occupation" class="form-control shadow-sm text-center" aria-describedby="">
+                                    </div>
+
+                                    <div class="col-4 pb-3">
+                                        <label for="reg_res_add5" class="col-form-label">Address: </label>
+                                    </div>
+                                    
+
+
+                                    <!--box-->
+
+                                    <div class="row justify-content-end">
+                                        <div class="col-3">
+                                            <div class="input-group flex-nowrap" style="z-index: 1;">
+                                                <span class="input-group-text" style="margin-top: 50px;" id="addon-wrapping21"> <i style="font-size: large; vertical-align: middle;" class="bi bi-pen-fill"></i>
+                                                    
+                                                </span>
+                                        
+                                                <input type="text" class="form-control text-center" placeholder="Signature" aria-label="Signature" aria-describedby="addon-wrapping" >
+                                    
+                                              </div>
+                                        </div>
+                                          
+                                         <div class="col-3">
+                                            <div class="input-group flex-nowrap" style="z-index: 1;">
+                                                <span class="input-group-text" style="margin-top: 50px;"  id="refwrap21">  <i style="font-size: large; vertical-align: middle;" class="bi bi-calendar-week-fill"></i>
+                                                </span>
+                                                <input type="date" id="Refe_Info22" class="form-control text-center"  placeholder=" &nbsp; dd/mm/yy" aria-label="dd/mm/yy" aria-describedby="addon-wrapping" >
+                                              </div>
+                                         </div>
+                                        </div>
+                                </form>
+                            </div> 
+                            <br>
+                            <br>
+                            <hr class="border border-secondary border-2 opacity-200">
+                            <br>
+                            <br>
+                        <!-- Financing Application Info Preview -->
+                        <div class="container">
+                            <h4 class=" pb-5" style="text-align: center;">Financing Application Summary & Declaration</h4> <br>
+                            <p class="mx-5" style="text-align: justify; font-weight: 500;">
+                                Adalah Dengan ini Saya Mengesahkan Bahawa <br>
+
+                                Saya <input type="text" id="fname11" placeholder="nama" style="text-align: center;"> No. My Kad <input type="text" id="fname21" placeholder="MyKad Number" style="text-align: center;">. <br><br>
+                                i) Dengan ini saya mengakui bahawa, sekiranya saya memberikan atau menggunakan apa-apa
+                                dokumen yang mengandungi maklumat atau butiran yang palsu dan silap dengan niat untuk memperdayakan bagi kepentingan dan keuntungan peribadi saya boleh didakwa di
+                                bawah Seksyen 18 Akta Suruhanjaya Pencegahan Rasuah Malaysia 2009 yang mana
+                                disabitkan oleh Mahkamah saya boleh dikenakan hukuman penjara selama tempoh tidak
+                                melebihi 20 tahun dan denda lima (5) kali suapan / nilai pemalsuan atau RM10,000.00
+                                mengikut mana-mana lebih tinggi dan <br><br>
+
+                                ii) Sekiranya saya menipu atau menggunakan apa-apa dokumen dengan niat menipu, saya
+                                boleh didakwa di bawah Seksyen 420 dan 468 Kanun Keseksaan yang mana jika disabitkan,
+                                saya boleh dikenakan hukuman penjara selama tempoh (7) tahun dan denda (Seksyen 468). <br><br>
+
+                                iii) Segala maklumat dan keterangan yang diberikan adalah benar. <br><br>
+
+                                iv) Saya memberikan kebenaran kepada Hijrah Selangor untuk mengsahkan
+                                maklumat mengenai diri saya seperti menyemak pinjaman sedia ada dengan mana-mana
+                                pihak yang berkaitan. <br><br>
+
+                                v) Pihak Hijrah Selangor berhak menolak permohonan ini jika didapati butir
+                                yang diberikan tidak benar. <br><br>
+
+                                vi) Sekiranya saya gagal membayar balik pinjaman pihak Hijrah Selangor berhak mengambil tindakan yang
+                                bersesuaian termasuk tindakan undang-undang. <br><br>
+                            </p>
+                            <div class="row justify-content-end" style=" margin-right: 40px; ">
+                                <div class="col-3">
+                                    <div class="input-group flex-nowrap" style="z-index: 1;">
+                                        <span class="input-group-text" style="margin-top: 50px;" id="addon-wrapping31"> <i style="font-size: large; vertical-align: middle;" class="bi bi-pen-fill"></i>
+                                            
+                                        </span>
+                                
+                                        <input type="text" class="form-control text-center" placeholder="Signature" aria-label="Signature" aria-describedby="addon-wrapping" >
+                            
+                                      </div>
+                                </div>
+                                  
+                                 <div class="col-3">
+                                    <div class="input-group flex-nowrap" style="z-index: 1;">
+                                        <span class="input-group-text" style="margin-top: 50px;"  id="refwrap31">  <i style="font-size: large; vertical-align: middle;" class="bi bi-calendar-week-fill"></i>
+                                        </span>
+                                        <input type="date" id="Refe_Info21" class="form-control text-center"  placeholder=" &nbsp; dd/mm/yy" aria-label="dd/mm/yy" aria-describedby="addon-wrapping" >
+                                      </div>
+                                 </div>
+                                </div>
+                        </div>
+                        <br>
+                        <br>
+                        <hr class="border border-secondary border-2 opacity-200">
+                        <br>
+                        <br>
+
+                        <!-- Business OP Preview -->
+
+
+                        <div class="container">
+                            <h4 class="pb-5" style="text-align: center;">Business Operation Analysis</h4> <br>
+                            <form class="row g-3 mx-2 mb-3" id="formdetails">
+                                
+                                
+                                <div class="col-3">
+                                    <label for="inception_cap1" class="col-form-label">Paid-up Capital an inception: </label>
+                                </div>
+                                <div class="col-3 ">
+                                    <input type="number" id="inception_cap1" placeholder="Paid-up Capital an inception" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="yearsofexp1" class="col-form-label"> Years of Business Experince: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="yearsofexp1" placeholder="Years of Business Experince" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <!-- Spacing for colomn -->
+                                <div class="col-6">
+                                    <label for="year11" class="col-form-label">Year 1 of Business</label>
+                                </div>
+                                <!-- Spacing for colomn -->
+
+                                <div class="col-6">
+                                    <label for="top3training1" class="col-form-label">Top 3 Trainings attended: </label>
+                                </div>
+
+
+                                <div class="col-3">
+                                    <label for="totalrev1" class="col-form-label">Total Revenue: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="totalrev1" placeholder="Total Revenue (RM)" class="form-control shadow-sm text-center" aria-describedby="" >
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="training11" class="col-form-label">Training 1: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="training11" placeholder="Training 1" class="form-control shadow-sm text-center" aria-describedby="" v>
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="gross_profit1" class="col-form-label">Gross Profit: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="gross_profit1" placeholder="Gross Profit (RM)" class="form-control shadow-sm text-center" aria-describedby="" >
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="training21" class="col-form-label">Training 2: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="training21" placeholder="Training 2" class="form-control shadow-sm text-center" aria-describedby="" value="-"> 
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="Value_of_Assets1" class="col-form-label">Value of Assets: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="Value_of_Assets1" placeholder="Value of Assets (RM)" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="training31" class="col-form-label">Training 3: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="training31" placeholder="Training 3" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="totaldebt1" class="col-form-label"> Total Debt: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="totaldebt1" placeholder="Total Debt (RM)" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="Pro_Qualify1" class="col-form-label">Professional Qualification: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="Pro_Qualify1" placeholder="Professional Qualification" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-12" style="margin-bottom: 50px;">
+                                </div>
+                                
+                                <!-- Second year of business -->
+
+                                <!-- Spacing for colomn -->
+                                <div class="col-6">
+                                    <label for="year2" class="col-form-label">Year 2 of Business:</label>
+                                </div>
+                                <!-- Spacing for colomn -->
+
+                                <div class="col-3">
+                                    <label for="grossprofit21" class="col-form-label">Gross Profit: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="grossprofit21" placeholder="Gross Profit (RM)" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+
+                                <div class="col-3">
+                                    <label for="totalrev21" class="col-form-label">Total Revenue: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="totalrev21" placeholder="Total Revenue (RM)" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="Value_of_Assets21" class="col-form-label">Value of Assets: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="Value_of_Assets21" placeholder="Value of Assets (RM)" class="form-control shadow-sm text-center" aria-describedby="" >
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="marketmethod21" class="col-form-label">Marketing Method: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="marketmethod21" placeholder="Training 3" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="totaldebt21" class="col-form-label"> Total Debt: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="totaldebt21" placeholder="Total Debt (RM)" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="businessinfra21" class="col-form-label">Business Infrastructure: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="businessinfra21" placeholder="Business Infrastructure:" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="custservice21" class="col-form-label">Customer Service: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="custservice21" placeholder="Customer Service" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="manufacmethod21" class="col-form-label">Manufacturing Method: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="manufacmethod21" placeholder="Manufacturing Method" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="accsoft_used21" class="col-form-label">Accounting Software Used: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="accsoft_used21" placeholder="Accounting Software Used" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                
+
+                            </form>
+                        </div> 
+                        <br>
+                        <br>
+                        <hr class="border border-secondary border-2 opacity-200">
+                        <br>
+                        <br>
+
+
+
+                        <!-- Business Management Preview-->
+
+
+                        <div class="container">
+                            <h4 class="pb-5" style="text-align: center;"> Business Management </h4> <br>
+                            <form class="row g-3 mx-2 mb-3" id="formdetails">
+                                
+                                <!-- Dropdown function needs to be enabled -->
+                                <div class="col-3">
+                                    <label for="businessstruct1" class="col-form-label">Business Structure: </label>
+                                </div>
+                                <div class="col-3 ">
+                                    <input type="text" id="businessstruct1" placeholder="Business Structure" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="businessplanstrats1" class="col-form-label"> Strategic Business Planning: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="businessplanstrats1" placeholder="Strategic Business Planning" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="workforce_manage1" class="col-form-label">Workforce Managment: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="workforce_manage1" placeholder="Workforce Management" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="ict_usage1" class="col-form-label">ICT Usage: </label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" id="ict_usage1" placeholder="ICT Usage" class="form-control shadow-sm text-center" aria-describedby="">
+                                </div>
+                            </form>
+                        </div>
+                   
+
+                        <br>
+                        <br>
+                            <hr class="border border-secondary border-2 opacity-200">
+                        <br>
+                        <br>
+
+                </fieldset>
+<!-- Preview Process END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- Statutory Declaration-->
+
+
+                        <div class="container pb-3 pt-5 mb-5 mt-3" style="border: 3px solid rgba(27, 100, 218, 0.15); background-color: rgba(51, 128, 255, 0.15); border-radius: 7px;">
+                            <h4 class="pb-5" style="text-align: center;">Statutory Declaration</h4> <br>
+                            <form class="row g-2 mx-2 mb-3" id="formdetails">
+                                <div class="col-12">
+                                    <p class="mx-5" style="text-align: center; font-weight: 500;">
+                                        Dengan menandatangani dan menyerahkan, saya dengan ini mengesahkan bahawa semua maklumat yang diberikan dalam borang ini adalah tepat dan benar sepanjang pengetahuan saya.
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-3">
+                                        <div class="input-group flex-nowrap" style="z-index: 1;">
+                                            <span class="input-group-text" style="margin-top: 50px;" id="addon-wrapping4"> <i style="font-size: large; vertical-align: middle;" class="bi bi-pen-fill"></i>
+                                                
+                                            </span>
+                                    
+                                            <input type="text" class="form-control text-center" data-bs-toggle="modal" data-bs-target="#signatureModal4" placeholder="Signature" aria-label="Signature" aria-describedby="addon-wrapping" disabled>
+                                
+                                          </div>
+                                    </div>
+                                      <div class="col-4"></div>
+                                     <div class="col-3">
+                                        <div class="input-group flex-nowrap" style="z-index: 1;">
+                                            <span class="input-group-text" style="margin-top: 50px;"  id="refwrap4">  <i style="font-size: large; vertical-align: middle;" class="bi bi-calendar-week-fill"></i>
+                                            </span>
+                                            <input type="date" id="Statutory_d" class="form-control text-center" onchange="dated(4)" placeholder=" &nbsp; dd/mm/yy" aria-label="dd/mm/yy" aria-describedby="addon-wrapping" >
+                                          </div>
+                                     </div>
+                                     <br>
+                                     <br>
+                                     <br>
+                                     <br>
+                                     <br>
+                                     <br>
+                                     <br>
+                                     <div class="d-grid gap-2 col-6 mx-auto">
+                                        <button class="btn btn-primary" type="button" onclick="submit();">SUBMIT</button>
+                                     </div>
+                                     
+                                    </div>
+                            </form>
+                        </div>
+                
+
+                    </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <!-- Last page for customer to return to first page or submit the documentation i.e. page 5-->
+                        <button class="btn btn-primary me-md-2" type="button" onclick="showpage(1);" style="display:block; width: 130px; ">TO FIRST PAGE</button>
+                        <button class="btn btn-primary" type="button" onclick="showpage(4);" style=" display:block; width: 115px; ">BACK</button>
+                        
+                    </div>
+
+               
+
+
+
+
+
+
+                               
+
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <br>
+            <br>
+
+
+            
+            <!-- /Table Responsive -->
+            <footer class="footer pt-3">
+                <div class="container-fluid">
+                    <div class="row align-items-center justify-content-lg-between">
+                        <div class="col-lg-6 mb-lg-0 mb-4">
+                            <div class="copyright text-center text-sm text-muted text-lg-start">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>,
+                                made with <i class="fa fa-heart"></i> by
+                                <a href="#" class="font-weight-bold" target="_blank">Kollect</a>
+                                for a better user experince.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+    </main>
+
+
+    
+
+
+
+
+
+
+<!-- MODALS START -->
+
+
+
+
+
+
+
+<!-- SIGNATURE 1 MODAL -->
+<div class="modal fade" id="signatureModal1" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Sign Below..</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+        <div class="container" >
+            <div class="signature-pad-form" style="background-color:#c0c0c0; width: 400px; height: 100px;">
+                <canvas class="signature-pad" id="canvas1" width="400" height="100"></canvas>
+            </div>
+            <a class="clear-button" onclick="clear1();">clear</a>
+            <br />
+        </div>
+
+        <div class="modal-footer">
+        <button type="button" class="btn btn-primary" style="background-color: #858585;" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" style="background-color: #188dfb;" data-bs-dismiss="modal" onclick="signed(1);">Save</button>
+       
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- SIGNATURE 2 MODAL -->
+<div class="modal fade" id="signatureModal2" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Sign Below..</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+        <div class="container" >
+            <div class="signature-pad-form" style="background-color:#c0c0c0; width: 400px; height: 100px;">
+                <canvas class="signature-pad" id="canvas2" width="400" height="100"></canvas>
+            </div>
+            <a class="clear-button" onclick="clear2();">clear</a>
+            <br />
+        </div>
+        
+
+        <div class="modal-footer">
+        <button type="button" class="btn btn-primary" style="background-color: #858585;" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" style="background-color: #188dfb;" data-bs-dismiss="modal"onclick="signed(2);">Save</button>
+       
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- SIGNATURE 3 MODAL -->
+<div class="modal fade" id="signatureModal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Sign Below..</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+        <div class="container" >
+            <div class="signature-pad-form" style="background-color:#c0c0c0; width: 400px; height: 100px;">
+                <canvas class="signature-pad" id="canvas3" width="400" height="100"></canvas>
+            </div>
+            <a class="clear-button" onclick="clear3();">clear</a>
+            <br />
+        </div>
+        
+
+        <div class="modal-footer">
+        <button type="button" class="btn btn-primary" style="background-color: #858585;" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" style="background-color: #188dfb;" data-bs-dismiss="modal" onclick="signed(3);">Save</button>
+       
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- SIGNATURE 4 MODAL -->
+<div class="modal fade" id="signatureModal4" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Sign Below..</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+        <div class="container" >
+            <div class="signature-pad-form" style="background-color:#c0c0c0; width: 400px; height: 100px;">
+                <canvas class="signature-pad" id="canvas4" width="400" height="100"></canvas>
+            </div>
+            <a class="clear-button" onclick="clear4();">clear</a>
+            <br />
+        </div>
+        
+
+        <div class="modal-footer">
+        <button type="button" class="btn btn-primary" style="background-color: #858585;" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" style="background-color: #188dfb;" data-bs-dismiss="modal" onclick="signed(4);">Save</button>
+       
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- Upload Modal -->
+
+    
+<div class="modal fade focus" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" >
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Uploading...</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+        <h5> Please select a file to upload </h5>   
+            <input type="file" id="uploadlink" style="display: block;">
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-primary" style="background-color: #858585;" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" style="background-color: #18A0FB;" data-bs-dismiss="modal">Upload</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+<!-- MODALS END -->
+
+
+
+
+
+
+
+
+
+
+
+    <!--   Core JS Files   -->
+    <script src=".assets/js/plugins/sweetalert.min.js"></script>
+    <script src="./assets/js/core/popper.min.js"></script>
+    <script src="./assets/js/core/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="./assets/js/plugins/chartjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <script src="progressbarscript.js"></script>
+    <script src="data.js"></script>
+    <script src="data2.js"></script>
+    <script src="progressbarscript.js"></script>
+    <script src="setgetupload.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+    
+
+
+    <!-- Country Code Selector -->
+    <script src="./assets/js/intlTelInput.js"></script>
+
+
+    <script>
+        showpage(1);
+        myFunction2();
+    </script>
+
+
+
+
+
+
+
+
+<!-- Phone Prefix Country Code [Personal Phone Number]-->
+<script>
+    var input = document.querySelector("#mobnum") || document.querySelector("#mobnum1");
+    window.intlTelInput(input, {
+    initialCountry: "my",
+    geoIpLookup: function(success, failure) {
+        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            success(countryCode);
+        });
+    },
+    utilsScript: "./assets/js/utils.js"
+});
+</script>
+
+
+<!-- Phone Prefix Country Code [Corporate Phone Number]-->
+<script>
+    var input = document.querySelector("#mobnumcorp") || document.querySelector("#mobnumcorp1");
+    window.intlTelInput(input, {
+    initialCountry: "my",
+    geoIpLookup: function(success, failure) {
+        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            success(countryCode);
+        });
+    },
+    utilsScript: "./assets/js/utils.js"
+});
+</script>
+
+
+<!-- Phone Prefix Country Code [Reference 1 Phone Number]-->
+<script>
+    var input = document.querySelector("#mobnumref1") || document.querySelector("#mobnumref11");
+    window.intlTelInput(input, {
+    initialCountry: "my",
+    geoIpLookup: function(success, failure) {
+        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            success(countryCode);
+        });
+    },
+    utilsScript: "./assets/js/utils.js"
+});
+</script>
+
+
+<!-- Phone Prefix Country Code [Reference 2 Phone Number]-->
+<script>
+    var input = document.querySelector("#mobnumref2") || document.querySelector("#mobnumref21");
+    window.intlTelInput(input, {
+    initialCountry: "my",
+    geoIpLookup: function(success, failure) {
+        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            success(countryCode);
+        });
+    },
+    utilsScript: "./assets/js/utils.js"
+});
+</script>
+
+<!-- Sidebar Function -->
+
+<script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+            damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+</script>
+
+<!-- Submit button. Values and error detection not added -->
+<script>
+    function submit() {
+            if(confirm("Upon confirming, the application will be submitted."))
+            {
+                alert("Document has been submitted successfully.")
+                // Reload page upon submit
+                location.reload();
+            }
+            else
+            {
+                alert("Document has not been submitted. You can re-check and submit anytime");
+            }
+        }
+</script>
+
+
+
+    <!-- flaterpickr-->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/soft-ui-dashboard.min.js?v=1.0.6"></script>
+    <script src="sign2.js"></script>
+    
+
+    
+    <script>
+
+    config= {
+
+    // enableTime: true,  
+    altInput: true,
+    altFormat: "j F, Y"
+    // altFormat: "j F, Y H:i"
+    
+    }
+
+        flatpickr("input[id=comp_regdate]", config);
+        flatpickr("input[id=Refe_Info1]", config);
+        flatpickr("input[id=Refe_Info2]", config);
+        flatpickr("input[id=Financing_asd1]", config);
+        flatpickr("input[id=Statutory_d]", config);
+       
+        
+    
+        
+    
+
+    </script>
+
+<!-- Dropdown Personal / Reference -->
+<script>
+    function Financingtype(x) {
+            if(x==1) {
+                document.getElementById("individual").style.display="block";
+                document.getElementById("corporate").style.display = "none";
+                document.getElementById("individual2").style.display="block";
+                document.getElementById("corporate2").style.display = "none";
+                document.getElementById("attachments").style.display = "block";
+                document.getElementById("no-next").style.display = "block";
+                document.getElementById("no-next1").style.display = "none";
+            }
+
+            else if(x==2){
+                document.getElementById("corporate").style.display="block";
+                document.getElementById("individual").style.display = "none";
+                document.getElementById("corporate2").style.display="block";
+                document.getElementById("individual2").style.display = "none";
+                document.getElementById("attachments").style.display = "block";
+                document.getElementById("no-next1").style.display = "block";
+                document.getElementById("no-next").style.display = "none";
+            }
+
+            else if(x==0){
+                document.getElementById("individual").style.display = "none";
+                document.getElementById("corporate").style.display = "none";
+                document.getElementById("individual2").style.display = "none";
+                document.getElementById("corporate2").style.display = "none";
+                document.getElementById("attachments").style.display = "none";
+                document.getElementById("no-next").style.display = "none";
+                document.getElementById("no-next1").style.display = "none";
+                
+            }
+            return;
+        }
+</script>
+
+<script> Financingtype(0); </script>
+
+
+
+
+
+<!-- Text block to append a div and add a block of code in it -->
+<script>
+    function addblock() {
+        document.getElementById("registerblock").innerHTML="<div>"+"<h3> Added Block</h3>"+ "</div>";
+    }
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add rows for addresses, etc -->
+<!-- Personal Box -->
+<script>
+    var counter1 = 1;   //This is for the main counter, increments values in the addbox function
+    var count1 = 1;     //Used for address 1, does not increment as well
+    var count2 = 2;     //Used for address 2, does not increment as well 
+    var textBox1 = "";
+    var address1 = document.getElementById("add1")
+    function addBox1()
+    {
+        if(counter1<4)
+        {
+        var div1 = document.createElement("div");
+        div1.setAttribute("class","col-12 pb-3");
+        div1.setAttribute("id","box_"+counter1);
+        
+        var textBox1 = "<div class='col pb-3' >"+"<input class='mybox1' type='button' value='Remove Address' onclick='removeBox1(this)'><br>"+"<label class='col-form-label'>Address &nbsp"+count1+"</label><input type='text' placeholder='Address 1' name='Address[]' class='myinput form-control myinput' id='addresses_1" +count1+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Address &nbsp"+count2+"</label><input type='text' placeholder='Address 2' name='Address[]' class='myinput form-control myinput' id='addresses_1" +count2+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Country</label><input type='text' placeholder='Country' name='Country[]' class='myinput form-control myinput' id='country_" +count1+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>State</label><input type='text' placeholder='State' name='Address[]' class='myinput form-control myinput'  id='state_" +count1+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Postcode</label><input type='text' placeholder='Postcode' name='postcode[]' class='myinput form-control myinput'  id='postcode_"  +counter1+"'>"+"</div></div></div>";
+        div1.innerHTML = textBox1;        
+
+        address1.appendChild(div1);
+        
+        counter1++;
+        }
+        else
+        {
+            alert("Maximum address limit reached");
+        }
+    }
+    
+    function removeBox1(ele)
+    {
+        counter1--;
+        ele.parentNode.remove();
+    }
+</script>
+
+
+<!-- Corporate address -->
+<script>
+    var counter2 = 1;   //This is for the main counter, increments values in the addbox function
+    var count12 = 1;     //Used for address 1, does not increment as well
+    var count22 = 2;     //Used for address 2, does not increment as well 
+    var textBox2 = "";
+    var address2 = document.getElementById("add2")
+    function addBox2()
+    {
+        if(counter2<4)
+        {
+        var div2 = document.createElement("div");
+        div2.setAttribute("class","col-12 pb-3");
+        div2.setAttribute("id","box_"+counter2);
+        
+        var textBox2 = "<div class='col pb-3' >"+"<input class='mybox1' type='button' value='Remove Address' onclick='removeBox2(this)'><br>"+"<label class='col-form-label'>Address &nbsp"+count12+"</label><input type='text' placeholder='Address 1' name='Address[]' class='myinput form-control myinput' id='addresses_1" +count12+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Address &nbsp"+count22+"</label><input type='text' placeholder='Address 2' name='Address[]' class='myinput form-control myinput' id='addresses_1" +count22+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Country</label><input type='text' placeholder='Country' name='Country[]' class='myinput form-control myinput' id='country_" +count12+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>State</label><input type='text' placeholder='State' name='Address[]' class='myinput form-control myinput'  id='state_" +count12+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Postcode</label><input type='text' placeholder='Postcode' name='postcode[]' class='myinput form-control myinput'  id='postcode_"  +counter2+"'>"+"</div></div></div>";
+        div2.innerHTML = textBox2;        
+
+        address2.appendChild(div2);
+        
+        
+        counter2++;
+        }
+        else
+        {
+            alert("Maximum address limit reached");
+        }
+    }
+    
+    function removeBox2(ele)
+    {
+        counter2--;
+        ele.parentNode.remove();
+    }
+</script>
+
+
+
+
+
+
+<!-- Reference box 1 -->
+<script>
+    var counter3 = 1;   //This is for the main counter, increments values in the addbox function
+    var count13 = 1;     //Used for address 1, does not increment as well
+    var count23 = 2;     //Used for address 2, does not increment as well 
+    var textBox3 = "";
+    var address3 = document.getElementById("add3")
+    function addBox3()
+    {
+        if(counter3<4)
+        {
+        var div3 = document.createElement("div");
+        div3.setAttribute("class","col-12 pb-3");
+        div3.setAttribute("id","box_"+counter3);
+        
+        var textBox3 = "<div class='col pb-3' >"+"<input class='mybox1' type='button' value='Remove Address' onclick='removeBox3(this)'><br>"+"<label class='col-form-label'>Address &nbsp"+count13+"</label><input type='text' placeholder='Address 1' name='Address[]' class='myinput form-control myinput' id='addresses_1" +count13+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Address &nbsp"+count23+"</label><input type='text' placeholder='Address 2' name='Address[]' class='myinput form-control myinput' id='addresses_1" +count23+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Country</label><input type='text' placeholder='Country' name='Country[]' class='myinput form-control myinput' id='country_" +count13+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>State</label><input type='text' placeholder='State' name='Address[]' class='myinput form-control myinput'  id='state_" +count13+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Postcode</label><input type='text' placeholder='Postcode' name='postcode[]' class='myinput form-control myinput'  id='postcode_"  +counter3+"'>"+"</div></div></div>";
+        div3.innerHTML = textBox3;        
+
+        address3.appendChild(div3);
+        
+        
+        counter3++;
+        }
+        else
+        {
+            alert("Maximum address limit reached");
+        }
+    }
+    
+    function removeBox3(ele)
+    {
+        counter3--;
+        ele.parentNode.remove();
+    }
+</script>
+
+
+
+<!-- Reference box 2 -->
+<script>
+    var counter4 = 1;   //This is for the main counter, increments values in the addbox function
+    var count14 = 1;     //Used for address 1, does not increment as well
+    var count24 = 2;     //Used for address 2, does not increment as well 
+    var textBox4 = "";
+    var address4 = document.getElementById("add4")
+    function addBox4()
+    {
+        if(counter4<4)
+        {
+        var div4 = document.createElement("div");
+        div4.setAttribute("class","col-12 pb-3");
+        div4.setAttribute("id","box_"+counter4);
+        
+        var textBox4 = "<div class='col pb-3' >"+"<input class='mybox1' type='button' value='Remove Address' onclick='removeBox4(this)'><br>"+"<label class='col-form-label'>Address &nbsp"+count14+"</label><input type='text' placeholder='Address 1' name='Address[]' class='myinput form-control myinput' id='addresses_1" +count14+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Address &nbsp"+count24+"</label><input type='text' placeholder='Address 2' name='Address[]' class='myinput form-control myinput' id='addresses_1" +count24+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Country</label><input type='text' placeholder='Country' name='Country[]' class='myinput form-control myinput' id='country_" +count14+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>State</label><input type='text' placeholder='State' name='Address[]' class='myinput form-control myinput'  id='state_" +count14+"'><input style='display:none' class='mybox1' type='button' value='-' onclick='removeBox1(this)'>"+"<label class='col-form-label'>Postcode</label><input type='text' placeholder='Postcode' name='postcode[]' class='myinput form-control myinput'  id='postcode_"  +counter4+"'>"+"</div></div></div>";
+        div4.innerHTML = textBox4;        
+
+        address4.appendChild(div4);
+        
+        
+        counter4++;
+        }
+        else
+        {
+            alert("Maximum address limit reached");
+        }
+    }
+    
+    function removeBox4(ele)
+    {
+        counter4--;
+        ele.parentNode.remove();
+    }
+</script>
+
+
+
+
+
+<!-- Download an Uploaded link -->
+<script>
+    const upinput = document.getElementById('uploadlink');
+    const downlink = document.getElementById('downloadlink');
+    let objectURL;
+
+    upinput.addEventListener('change', function () {
+    if (objectURL) {
+        // revoke the old object url to avoid using more memory than needed
+        URL.revokeObjectURL(objectURL);  
+    }
+
+    const file = this.files[0];
+    objectURL = URL.createObjectURL(file);
+    // downlink.download = file.name; // this name is used when the user downloads the file
+    downlink.href = objectURL
+    downlink.window.open(objectURL,'_blank').focus();
+    });
+</script>
+
+<!-- Signatures START -->
+<script>
+      $(function () {
+    window.signaturePad1 = new SignaturePad($('#canvas1').get(0), {
+    });
+    
+    window.signaturePad2 = new SignaturePad($('#canvas2').get(0), {
+    });
+
+    window.signaturePad3 = new SignaturePad($('#canvas3').get(0), {
+    });
+    
+    window.signaturePad4 = new SignaturePad($('#canvas4').get(0), {
+    });
+  })
+  
+  var clear1 = function () {
+    window.signaturePad1.clear()
+  }
+  
+  var clear2 = function () {
+    window.signaturePad2.clear()
+  }
+
+  var clear3 = function () {
+    window.signaturePad3.clear()
+  }
+  
+  var clear4 = function () {
+    window.signaturePad4.clear()
+  }
+</script>
+
+<script>
+    function signed(x) {
+        if(x==1) 
+        {
+            document.getElementById("addon-wrapping1").style.background="#3fff3f";
+            document.getElementById("addon-wrapping11").style.background="#3fff3f";
+        }
+        else if(x==2)
+        {
+            document.getElementById("addon-wrapping2").style.background="#3fff3f";
+            document.getElementById("addon-wrapping21").style.background="#3fff3f";
+        }
+        else if(x==3)
+        {
+            document.getElementById("addon-wrapping3").style.background="#3fff3f";
+            document.getElementById("addon-wrapping31").style.background="#3fff3f";
+        }
+        else if(x==4)
+        {
+            document.getElementById("addon-wrapping4").style.background="#3fff3f";
+        }
+    }
+</script>
+
+<script>
+    function dated(x) {
+        if(x==1) 
+        {
+            document.getElementById("refwrap1").style.background="#3fff3f";
+            document.getElementById("refwrap11").style.background="#3fff3f";
+        }
+        else if(x==2)
+        {
+            document.getElementById("refwrap2").style.background="#3fff3f";
+            document.getElementById("refwrap21").style.background="#3fff3f";
+        }
+        else if(x==3)
+        {
+            document.getElementById("refwrap3").style.background="#3fff3f";
+            document.getElementById("refwrap31").style.background="#3fff3f";
+        }
+        else if(x==4)
+        {
+            document.getElementById("refwrap4").style.background="#3fff3f";
+        }
+        else if(x==5)
+        {
+            document.getElementById("refwrap5").style.background="#3fff3f";
+            document.getElementById("refwrap51").style.background="#3fff3f";
+        }
+    }
+</script>
+
+
+
+</body>
+
+</html>

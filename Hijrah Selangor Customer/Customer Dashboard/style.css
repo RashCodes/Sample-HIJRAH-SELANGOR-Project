@@ -1,0 +1,26 @@
+.previewbtn {
+    background-color: #63E000;
+    color: aliceblue;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px #c0c0c0;
+    
+}
+
+.previewbtn:hover {
+    background-color: #54bb00;
+}
+
+
+.disabledbutton {
+    background-color: #c0c0c0;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px #c0c0c0;
+}
+
+.disabledbutton:hover {
+    background-color: #919191;
+    color: #FFFFFF;
+}

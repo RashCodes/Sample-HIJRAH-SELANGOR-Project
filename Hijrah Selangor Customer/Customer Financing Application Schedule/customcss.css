@@ -1,0 +1,36 @@
+.previewbtn {
+    background-color: #63E000;
+    color: #000000;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px #c0c0c0;
+    
+}
+
+.previewbtn:hover {
+    background-color: #54bb00;
+}
+
+
+.disabledbutton {
+    background-color: #c0c0c0;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px #c0c0c0;
+}
+
+.disabledbutton:hover {
+    background-color: #919191;
+    color: #FFFFFF;
+}
+.understyle {
+    margin-left: 1px; 
+    background-color:#18A0FB; 
+    border-radius: 0px 10px 10px 0px; 
+    padding-bottom: 2px;
+}
+
+.navspacer {
+    margin-left: -0px;
+}
