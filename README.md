@@ -1,4 +1,4 @@
-# Whole-Project-HIJRAH-SELANGOR For Customer and Management Site.
+# HIJRAH-SELANGOR For Customer and Management Site.
 
 - Hijrah Selangor Customer
 1- Customer Dashboard
